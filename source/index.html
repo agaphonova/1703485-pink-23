@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <button class="button btn-download">Скачать приложение</button>
+          <div class="store">
+            <ul class="store__list">
+              <li class="store__item">
+                <a class="store__link" href="#">
+                  <img class="store__apple" src="img/apple-logo.svg" width="47" height="56" alt="app store">
+                </a>
+              </li>
+              <li class="store__item">
+                <a class="store__link" href="#">
+                  <img class="store__android" src="img/android-logo.svg" width="43" height="47" alt="play market">
+                </a>
+              </li>
+              <li class="store__item">
+                <a class="store__link" href="#">
+                  <img class="store__microsoft" src="img/microsoft-logo.svg" width="43" height="47" alt="Microsoft Store">
+                </a>
+              </li>
+            </ul>
+            <p class="store__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+      </section>
+    </main>
   </body>
 </html>

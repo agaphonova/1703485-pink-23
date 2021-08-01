@@ -1,1 +1,30 @@
 // Начните писать стили здесь
+body { background: red; }
+@import "../../node_modules/normalize.css/normalize";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+@import "../sass/global.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/btn-download.scss";
+@import "./blocks/button.scss";
+@import "./blocks/connection.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/footer-logo.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/option.scss";
+@import "./blocks/options.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/page.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/result.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/store.scss";
+@import "./blocks/tarif.scss";
+@import "./blocks/tariffs.scss";

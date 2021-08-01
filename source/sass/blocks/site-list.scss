@@ -1,0 +1,14 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item {
+
+  .site-list__link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: $basic-white;
+    text-decoration: none;
+  }
+}

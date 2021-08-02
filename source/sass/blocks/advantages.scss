@@ -1,20 +1,40 @@
 // .advantages {
 
 // }
+
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.advantages__list-wrapper {
+  background: url(../../img/grey-background.png) no-repeat;
+  background-size: cover;
+  padding-top: 129px;
+}
+
 .advantages__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .advantages__slogan {
+  padding-top: 46px;
+  padding-bottom: 70px;
   font-size: 24px;
   font-weight: 300;
   color: $basic-text;
+  margin: 0;
 }
 
 .advantages__title {
   font-size: 18px;
   font-weight: 700;
   color: $basic-black;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__description {

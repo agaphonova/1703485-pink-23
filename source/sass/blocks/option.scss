@@ -1,8 +1,18 @@
-// .option {
-
-// }
+.option {
+  width: 276px;
+  height: 59px;
+  border: 2px solid $grey-border;
+  background-color: $grey-cell;
+}
 
 .option__title {
   color: $basic-text;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.option__cell {
+  margin: 0;
+  padding: 0;
 }

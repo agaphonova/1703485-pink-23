@@ -1,6 +1,7 @@
-// .reviews {
-
-// }
+.reviews {
+  width: 280px;
+  margin: 0 auto;
+}
 
 .reviews__author-name {
   font-size: 18px;
@@ -11,4 +12,7 @@
 
 .reviews__text {
   color: $basic-text;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }

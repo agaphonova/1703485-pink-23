@@ -1,15 +1,20 @@
-// .result {
-
-// }
+.result {
+  width: 280px;
+  margin: 0 auto;
+}
 
 .result__title {
   font-size: 30px;
   font-weight: 700;
   color: $basic-black;
+  margin: 0;
+  padding: 0;
 }
 
 .result__info {
   color: $basic-text;
+  margin: 0;
+  padding: 0;
 }
 
 .result__link {

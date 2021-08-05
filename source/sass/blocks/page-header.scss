@@ -1,3 +1,16 @@
 .page-header {
-  background-color: $basic-text;
+  background: url(../../img/back-mobile.jpg) no-repeat;
+  height: 100%;
+}
+
+.page-header__line-menu {
+  height: 66px;
+  background-color: $grey-menu-color;
+}
+
+.page-header__wrapper {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

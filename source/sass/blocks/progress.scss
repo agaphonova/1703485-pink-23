@@ -22,13 +22,10 @@
   &:checked {
     content: url(../../img/tick.svg);
     background-size: contain;
-    top: 55px;
-    left: 55px;
   }
 }
 
 .progress__label {
   margin: 0;
   padding: 0;
-  // padding-top: 10px;
 }

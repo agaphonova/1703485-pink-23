@@ -1,6 +1,7 @@
 .app {
   background-color: $grey-background;
   padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .app__wrapper {
@@ -20,4 +21,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.app__radio-item:not(:last-child) {
+  margin-bottom: 38px;
 }

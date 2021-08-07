@@ -1,0 +1,34 @@
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.progress__label {
+  color: $basic-text;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.progress__input {
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background-color: $basic-white;
+  border: 2px solid $grey-border;
+  border-radius: 1px;
+  padding: 9px 6px 10px 7px;
+  margin-right: 20px;
+
+  &:checked {
+    content: url(../../img/tick.svg);
+    background-size: contain;
+    top: 55px;
+    left: 55px;
+  }
+}
+
+.progress__label {
+  margin: 0;
+  padding: 0;
+  // padding-top: 10px;
+}

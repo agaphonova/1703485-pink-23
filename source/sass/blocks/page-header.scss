@@ -1,4 +1,5 @@
 .page-header {
+  width: $mobile-width;
   background: url(../../img/back-mobile.jpg) no-repeat;
   height: 100%;
 }
@@ -12,4 +13,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-header__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 20px;
+  padding: 36px 0 51px 0;
+  color: $basic-white;
 }

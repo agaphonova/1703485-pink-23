@@ -1,6 +1,8 @@
 .tarif {
   width: 276px;
-  height: 94px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 35px;
 }
 
 .tarif__type {
@@ -15,6 +17,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 15px;
 }
 
 .tarif__price {

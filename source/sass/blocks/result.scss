@@ -1,6 +1,8 @@
 .result {
   width: 280px;
   margin: 0 auto;
+  display: none;
+  // на мобильной версии секция отсутствует
 }
 
 .result__title {

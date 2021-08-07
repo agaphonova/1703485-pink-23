@@ -1,8 +1,9 @@
 .option {
-  width: 276px;
-  height: 59px;
+  padding: 19px 17px 19px 20px;
   border: 2px solid $grey-border;
   background-color: $grey-cell;
+  display: flex;
+  justify-content: space-between;
 }
 
 .option__title {
@@ -16,3 +17,4 @@
   margin: 0;
   padding: 0;
 }
+

@@ -1,11 +1,18 @@
-// .contacts {
+.contacts {
+  text-align: center;
+}
 
-// }
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
 
 .contacts__slogan {
   font-weight: 300;
   font-size: 24px;
   color: $basic-text;
+  line-height: 28px;
+  margin-bottom: 45px;
 }
 
 .contacts__list {
@@ -20,6 +27,7 @@
   color: $basic-text;
   margin: 0;
   padding: 0;
+  margin-bottom: 13px;
 }
 
 .contacts__content {
@@ -28,4 +36,6 @@
   color: $basic-pink;
   margin: 0;
   padding: 0;
+  margin-bottom: 31px;
+  line-height: 33px;
 }

@@ -3,11 +3,18 @@
   margin: 0 auto;
 }
 
+.reviews__item {
+  margin: 0;
+}
+
 .reviews__author-name {
   font-size: 18px;
   font-weight: 700;
   color: $basic-black;
   font-style: normal;
+  text-align: center;
+  display: block;
+  margin-bottom: 31px;
 }
 
 .reviews__text {
@@ -15,4 +22,6 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  line-height: 30px;
+  margin-bottom: 44px;
 }

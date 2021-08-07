@@ -1,22 +1,26 @@
-// .tarrifs {
+.tariffs {
+  margin-bottom: 50px;
+  background: url(../../img/grey-background-tarif.png) no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  // padding-bottom: 46px;
+  // padding-top: 127px;
+}
 
-// }
-.tariffs__wripper {
+.tariffs__list-wripper {
   width: 280px;
   margin: 0 auto;
 }
 
-.tariffs__list-wripper {
-  background: url(../../img/grey-background-tarif.png) no-repeat;
-  background-size: cover;
-  padding-top: 127px;
-  padding-bottom: 46px;
+.tariffs__wripper {
+  padding-top: 150px;
 }
 
 .tariffs__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 45px;
 }
 
 .tariffs__item {

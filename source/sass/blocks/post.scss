@@ -1,0 +1,50 @@
+.post {
+  width: 280px;
+  margin: 0 auto;
+
+  margin-bottom: 20px;
+}
+
+.post__wripper {
+  padding: 26px 10px 26px 17px;
+  background-color: $grey-background;
+}
+
+.post__author-info {
+  margin-bottom: 14px;
+}
+
+.post__author-name {
+  font-weight: 700;
+  line-height: 24px;
+  color: $basic-text;
+}
+
+.post__time-info {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $basic-text;
+}
+
+.post__text {
+  line-height: 24px;
+  color: $basic-text;
+  margin-bottom: 25px;
+}
+
+.post__likes {
+  display: flex;
+  align-items: center;
+}
+
+.post__likes-icon {
+  margin-right: 18px;
+}
+
+.post__likes-number {
+  font-size: 12px;
+  line-height: 24px;
+  color: $basic-pink;
+  text-transform: uppercase;
+}

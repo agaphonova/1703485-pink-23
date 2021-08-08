@@ -5,11 +5,14 @@
 @import "../sass/global.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/app.scss";
+@import "./blocks/billboard.scss";
 @import "./blocks/btn-download.scss";
 @import "./blocks/button.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/connection.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/copyright.scss";
+@import "./blocks/download.scss";
 @import "./blocks/footer-logo.scss";
 @import "./blocks/form.scss";
 @import "./blocks/form-contact.scss";
@@ -22,9 +25,11 @@
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/page.scss";
+@import "./blocks/post.scss";
 @import "./blocks/progress.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/radio.scss";
+@import "./blocks/range.scss";
 @import "./blocks/result.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/send.scss";
@@ -36,3 +41,4 @@
 @import "./blocks/success.scss";
 @import "./blocks/tarif.scss";
 @import "./blocks/tariffs.scss";
+@import "./blocks/tunning.scss";

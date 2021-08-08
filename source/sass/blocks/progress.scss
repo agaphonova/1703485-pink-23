@@ -4,6 +4,8 @@
 }
 
 .progress__label {
+  margin: 0;
+  padding: 0;
   color: $basic-text;
   line-height: 30px;
   font-size: 18px;
@@ -20,12 +22,7 @@
   margin-right: 20px;
 
   &:checked {
-    content: url(../../img/tick.svg);
+    content: url("../../img/tick.svg");
     background-size: contain;
   }
-}
-
-.progress__label {
-  margin: 0;
-  padding: 0;
 }

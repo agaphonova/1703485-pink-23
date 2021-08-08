@@ -24,14 +24,14 @@
 .store__item {
   display: inline-block;
 
-    &:nth-child(2) {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
+  &:nth-child(2) {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
 }
 
 .store__legend {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;

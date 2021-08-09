@@ -21,16 +21,19 @@
 }
 
 .advantages__slogan {
+  font-family: "Open Sans Light", "Arial-Light", sans-serif;
   margin: 0;
   padding: 0;
-  padding-top: 46px;
-  padding-bottom: 70px;
+  // padding-top: 46px;
+  // padding-bottom: 70px;
   font-size: 24px;
   font-weight: 300;
   color: $basic-text;
+  text-align: center;
 }
 
 .advantages__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: $basic-black;

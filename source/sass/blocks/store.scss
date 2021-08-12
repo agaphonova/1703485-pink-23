@@ -1,0 +1,42 @@
+.store {
+  width: $mobile-width;
+  padding-bottom: 38px;
+  padding-top: 28px;
+  background-color: $basic-text;
+}
+
+.store__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.store__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.store__item {
+  display: inline-block;
+
+  &:nth-child(2) {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+.store__legend {
+  font-family: "Open Sans Light", "Arial-Light", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $basic-white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

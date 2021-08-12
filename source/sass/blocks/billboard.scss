@@ -1,0 +1,22 @@
+// .billboard {
+
+// }
+
+.billboard__image {
+  position: relative;
+  background-clip: border-box;
+}
+
+.billboard__slogan {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: $basic-pink;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-white;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}

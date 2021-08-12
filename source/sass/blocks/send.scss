@@ -1,0 +1,23 @@
+.send {
+  margin-bottom: 26px;
+}
+
+.send__button {
+  background-color: $basic-btn;
+  // border: none;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  padding: 23px 45px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-white;
+  border: 2px solid $basic-btn;
+  border-radius: 1px;
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.send__attantion {
+  color: $basic-text;
+  text-transform: uppercase;
+}

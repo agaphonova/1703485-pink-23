@@ -1,0 +1,29 @@
+.tariffs {
+  margin-bottom: 50px;
+  background: url("../../img/grey-background-tarif.png") no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  // padding-bottom: 46px;
+  // padding-top: 127px;
+}
+
+.tariffs__list-wripper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.tariffs__wripper {
+  padding-top: 150px;
+  padding-bottom: 49px;
+}
+
+.tariffs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.tariffs__item {
+  background-color: $basic-text;
+}

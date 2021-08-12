@@ -1,0 +1,27 @@
+.page-header {
+  width: $mobile-width;
+  background: url("../../img/back-mobile.jpg") no-repeat;
+  height: 100%;
+}
+
+.page-header__line-menu {
+  background-color: $grey-menu-color;
+}
+
+.page-header__wrapper {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__slogan {
+  font-family: "Open Sans Light", "Arial-Light", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 20px;
+  padding: 36px 0 51px 0;
+  color: $basic-white;
+  text-align: center;
+}

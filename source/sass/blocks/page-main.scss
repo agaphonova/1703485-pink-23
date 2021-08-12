@@ -1,0 +1,22 @@
+.page-main {
+  width: $mobile-width;
+  border-color: $basic-white;
+}
+
+.page-main__catalog-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-main__slogan {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  color: $basic-text;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 60px;
+}

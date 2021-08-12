@@ -1,0 +1,55 @@
+.form {
+  width: $mobile-width;
+  padding-top: 54px;
+  // margin-top: 15px;
+}
+
+.form__slogan {
+  line-height: 30px;
+  color: $basic-text;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+}
+
+.form__user-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-area__label {
+  line-height: 30px;
+  color: $basic-pink;
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.form-area__input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid $grey-border;
+  border-radius: 1px;
+  padding: 23px 20px 23px 20px;
+  margin-bottom: 29px;
+
+  &:focus {
+    outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &::placeholder {
+    color: $basic-text;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.form-area__icon {
+  display: none;
+}

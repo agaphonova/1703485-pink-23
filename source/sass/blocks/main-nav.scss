@@ -1,0 +1,21 @@
+.main-nav {
+  outline: 3px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -3px;
+}
+
+.main-nav__toggle {
+  outline: 3px solid blue;
+  outline-offset: -3px;
+}
+
+.main-nav__wrapper {
+  outline: 3px solid yellow;
+  outline-offset: -3px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+}

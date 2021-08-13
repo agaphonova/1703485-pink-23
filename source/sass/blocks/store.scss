@@ -3,6 +3,10 @@
   padding-bottom: 38px;
   padding-top: 28px;
   background-color: $basic-text;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 
 .store__wrapper {

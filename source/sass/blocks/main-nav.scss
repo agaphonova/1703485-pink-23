@@ -3,13 +3,8 @@
   outline-offset: -3px;
 }
 
-.main-nav__toggle {
-  outline: 3px solid blue;
-  outline-offset: -3px;
-}
-
 .main-nav__wrapper {
-  outline: 3px solid yellow;
+  outline: 3px solid (0, 255, 0);
   outline-offset: -3px;
 
   @media (min-width: $desktop-width) {

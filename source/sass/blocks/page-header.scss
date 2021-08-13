@@ -1,23 +1,37 @@
 .page-header {
-  width: $mobile-width;
+  display: flex;
+  flex-direction: column;
   background: url("../../img/back-mobile.jpg") no-repeat;
-  height: 100%;
-}
-
-.page-header__line-menu {
-  background-color: $grey-menu-color;
+  background-position: center;
 }
 
 .page-header__wrapper {
   width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.page-header__line-menu {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  // align-items: center;
-  @media (min-width: $tablet-width) {
-    width: $desktop-width;
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
+}
+
+.page-header__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $grey-menu-color;
 }
 
 .page-header__slogan {
@@ -32,11 +46,20 @@
 }
 
 .page-header__logo {
-  // outline: 5px solid rgba(255, 0, 0, 0.8);
-  // outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
   height: 23px;
 
   @media (min-width: $tablet-width) {
     height: 40px;
+  }
+}
+
+.page-header__toggle {
+  outline: 3px solid rgba(0, 0, 255, 2);
+  outline-offset: -3px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

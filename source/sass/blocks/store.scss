@@ -1,17 +1,17 @@
 .store {
-  width: $mobile-width;
   padding-bottom: 38px;
   padding-top: 28px;
   background-color: $basic-text;
 
   @media (min-width: $tablet-width) {
     background: none;
+    width: 280px;
   }
 }
 
 .store__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  text-align: center;
+  // margin: 0 auto;
 }
 
 .store__list {
@@ -40,7 +40,7 @@
   font-weight: 300;
   line-height: 24px;
   color: $basic-white;
-  margin: 0;
   padding: 0;
   text-align: center;
+  margin: 0 20px;
 }

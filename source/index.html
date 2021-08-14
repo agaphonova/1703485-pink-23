@@ -8,44 +8,45 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <!-- <div class="page-header__wrapper"> -->
         <div class="page-header__line-menu">
-          <div class="page-header__header page-header__wrapper">
-            <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение Pink">
-            </a>
-            <button class="page-header__toggle" type="button">
-              <span class="visually-hidden">открыть меню</span>
-            </button>
-          </div>
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
-                  <a class="site-list__link" href="index.html">
-                    Главная
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">
-                    Фотографии
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">
-                    Конкурс
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    HTML Academy
-                  </a>
-                </li>
-              </ul>
+          <div class="page-header__header">
+            <div class="page-header__wrapper">
+              <a class="page-header__logo">
+                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение Pink">
+              </a>
+              <button class="page-header__toggle" type="button">
+                <span class="visually-hidden">открыть меню</span>
+              </button>
             </div>
-          </nav>
+            <nav class="main-nav">
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                  <li class="site-list__item site-list__item--active">
+                    <a class="site-list__link" href="index.html">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">
+                      Фотографии
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">
+                      Конкурс
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      HTML Academy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      <!-- </div> -->
+
       <section class="promo">
         <div class="promo__wrapper">
           <h1 class="promo__slogan">Взгляните на жизнь иначе!</h1>
@@ -83,8 +84,9 @@
       <section class="advantages">
         <div class="advantages__content">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <div class="advantages__wrapper">
-            <p class="advantages__slogan">Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!</p>
+          <div class="advantages__slogan-wrapper">
+            <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+            <p class="advantages__slogan-answer">Нам есть, что вам<br>предложить!</p>
           </div>
           <div class="advantages__list-wrapper">
             <div class="advantages__wrapper">
@@ -106,10 +108,13 @@
             </div>
           </div>
         </div>
-        <div class="advantages__stats result">
-          <p class="result__title">Эффект на 24 часа!</p>
-          <p class="result__info">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="result__link" href="#">узнать больше об исследовании</a>
+        <div class="advantages__stats">
+          <img class="advantages__stats-img" src="../../img/timer.svg" width="238" height="276" alt="счетчик времени">
+          <div class="result">
+            <p class="result__title">Эффект на 24 часа!</p>
+            <p class="result__info">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="result__link" href="#">узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
@@ -120,6 +125,7 @@
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-age">25 лет, водитель трамвая</p>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
@@ -133,8 +139,13 @@
       </section>
 
       <section class="tariffs">
-        <div class="tariffs__list-wripper">
-          <div class="tariffs__wripper">
+        <div class="tariffs__list-wrapper">
+          <div class="tariffs__wrapper">
+            <ul class="tariffs__list-tablet">
+                <li class="tariffs__option-title tariffs__option-title--tablet">Розовый фильтр</li>
+                <li class="tariffs__option-title tariffs__option-title--tablet">Смайлики</li>
+                <li class="tariffs__option-title tariffs__option-title--tablet">Комментарии</li>
+            </ul>
             <ul class="tariffs__list">
               <!-- <li class="tariffs__item tarif">
                 <p class="tarif__name visually-hidden">название тарифа</p>
@@ -158,14 +169,13 @@
                 <p class="option__cell">+</p>
               </li>
             </ul>
-
             <ul class="tariffs__list">
               <!-- <li class="tariffs__item tarif">
                 <p class="tarif__name visually-hidden">название тарифа</p>
                 <p class="tarif__price visually-hidden">условия тарифа</p>
               </li> -->
               <li class="tariffs__item tarif">
-                <span class="tarif__type">хит</span>
+                <!-- <span class="tarif__type">хит</span> -->
                 <p class="tarif__name">стандарт</p>
                 <p class="tarif__price">3,99 USD</p>
               </li>
@@ -183,7 +193,6 @@
                 <p class="option__cell">+</p>
               </li>
             </ul>
-
             <ul class="tariffs__list">
               <li class="tariffs__item tarif">
                 <p class="tarif__name">анлим</p>
@@ -203,19 +212,18 @@
                 <p class="option__cell">+</p>
               </li>
             </ul>
-
-            <p class="option-toggle">
-              <button class="option-toggle__btn option-toggle__btn--current" type="button">1</button>
-              <button class="option-toggle__btn" type="button">2</button>
-              <button class="option-toggle__btn" type="button">3</button>
-            </p>
           </div>
+          <p class="option-toggle">
+            <button class="option-toggle__btn option-toggle__btn--current" type="button">1</button>
+            <button class="option-toggle__btn" type="button">2</button>
+            <button class="option-toggle__btn" type="button">3</button>
+          </p>
         </div>
       </section>
 
       <section class="contacts">
         <div class="contacts__wrapper">
-        <div class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</div>
+        <div class="contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</div>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__title">Звоните:</p>

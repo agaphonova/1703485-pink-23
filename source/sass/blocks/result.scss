@@ -1,8 +1,24 @@
 .result {
-  width: 280px;
   margin: 0 auto;
   display: none;
-  // на мобильной версии секция отсутствует
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    min-height: 276px;
+
+    // &::before {
+    //   content: "";
+    //   background: url("../../img/timer.svg") no-repeat;
+    //   background-size: contain;
+    //   width: 238px;
+    //   height: 276px;
+    //   position: absolute;
+    //   bottom: 1px;
+    //   left: 20px;
+    // }
+  }
 }
 
 .result__title {
@@ -18,8 +34,18 @@
   color: $basic-text;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .result__link {
   color: $basic-pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

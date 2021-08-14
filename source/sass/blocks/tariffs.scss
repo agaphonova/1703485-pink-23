@@ -1,20 +1,57 @@
 .tariffs {
   margin-bottom: 50px;
+  padding-bottom: 50px;
   background: url("../../img/grey-background-tarif.png") no-repeat;
   background-position: 100%;
   background-size: cover;
-  // padding-bottom: 46px;
-  // padding-top: 127px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 0 4%;
+  }
 }
 
-.tariffs__list-wripper {
+.tariffs__list-wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 94%;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 79%;
+    padding: 0 130px;
+  }
 }
 
-.tariffs__wripper {
+.tariffs__wrapper {
   padding-top: 150px;
   padding-bottom: 49px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.tariffs__list-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 
 .tariffs__list {
@@ -22,6 +59,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .tariffs__item {

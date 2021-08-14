@@ -1,11 +1,12 @@
 .page {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-.page__body {
+  height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   border-color: $basic-white;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
 }

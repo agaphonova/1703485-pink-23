@@ -3,4 +3,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 94px;
+    align-items: center;
+  }
 }

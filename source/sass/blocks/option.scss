@@ -4,6 +4,12 @@
   background-color: $grey-cell;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: center;
+    padding: 19px 0;
+  }
 }
 
 .option__title {
@@ -11,6 +17,44 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.tariffs__option {
+  color: $basic-text;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.tariffs__option-title {
+  color: $basic-text;
+
+  @media (min-width: $mobile-width) {
+    &--tablet {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--tablet {
+      display: block;
+      padding: 19px 0 19px 15px;
+      border: 2px solid $grey-border;
+      background-color: $grey-cell;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 17px 0 17px 15px;
+  }
 }
 
 .option__cell {
@@ -21,4 +65,12 @@
 .option__input {
   width: 37px;
   height: 37px;
+}
+
+.option-toggle {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

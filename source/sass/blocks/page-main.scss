@@ -4,8 +4,20 @@
 }
 
 .page-main__catalog-wrapper {
-  width: 280px;
+  min-width: 280px;
   margin: 0 auto;
+  padding: 54px 40px 60px 40px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 620px;
+    padding: 100px 110px 85px 110px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 310px 97px 310px;
+    min-width: 940px;
+  }
 }
 
 .page-main__slogan {
@@ -17,6 +29,9 @@
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-  margin-top: 54px;
-  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

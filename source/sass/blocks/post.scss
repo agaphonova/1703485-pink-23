@@ -1,17 +1,52 @@
 .post {
-  width: 280px;
+  // width: 280px;
   margin: 0 auto;
-
   margin-bottom: 20px;
+
+  &--card {
+    padding: 0 20px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 130px;
+    }
+  }
+
+  &--item {
+    outline: 5px solid rgba(255, 0, 0, 0.8);
+    outline-offset: -5px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 48%;
+      max-width: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32%;
+    }
+  }
 }
 
-.post__wripper {
+.post__wrapper {
   padding: 26px 10px 26px 17px;
   background-color: $grey-background;
 }
 
+.post__author-likes-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .post__author-info {
-  margin-bottom: 14px;
+  &--billboard {
+    margin-bottom: 14px;
+  }
 }
 
 .post__author-name {
@@ -38,6 +73,22 @@
 .post__likes {
   display: flex;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--feed {
+    display: block;
+  }
 }
 
 .post__likes-icon {

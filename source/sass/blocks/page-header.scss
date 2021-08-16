@@ -33,6 +33,10 @@
     min-width: 620px;
     height: 110px;
     background-color: $basic-text;
+
+    &--catalog {
+      background: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -48,9 +52,19 @@
   font-size: 24px;
   line-height: 33px;
   margin: 0 20px;
-  padding: 36px 0 51px 0;
   color: $basic-white;
   text-align: center;
+  padding: 36px 0 84px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 81px 0 143px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 104px 0;
+  }
 }
 
 .page-header__logo {

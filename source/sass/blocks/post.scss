@@ -13,7 +13,7 @@
     outline: 5px solid rgba(255, 0, 0, 0.8);
     outline-offset: -5px;
     width: 100%;
-    transition: width .2s;
+    transition: width 0.2s;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;

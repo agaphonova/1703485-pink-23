@@ -1,6 +1,4 @@
 .post {
-  // width: 280px;
-  margin: 0 auto;
   margin-bottom: 20px;
 
   &--card {
@@ -15,14 +13,10 @@
     outline: 5px solid rgba(255, 0, 0, 0.8);
     outline-offset: -5px;
     width: 100%;
+    transition: width .2s;
 
     @media (min-width: $tablet-width) {
-      width: 48%;
-      max-width: 300px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 32%;
+      margin-bottom: 0;
     }
   }
 }
@@ -30,6 +24,10 @@
 .post__wrapper {
   padding: 26px 10px 26px 17px;
   background-color: $grey-background;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px;
+  }
 }
 
 .post__author-likes-wrapper {
@@ -65,9 +63,14 @@
 }
 
 .post__text {
+  margin: 0;
   line-height: 24px;
   color: $basic-text;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    height: 2.8em;
+  }
 }
 
 .post__likes {

@@ -1,9 +1,30 @@
 .success {
   background-color: $grey-background;
-  padding-top: 42px;
-  padding-left: 20px;
-  padding-bottom: 42px;
+  padding: 42px 20px;
+  // padding-top: 42px;
+  // padding-left: 20px;
+  // padding-bottom: 42px;
   margin-top: 15px;
+  outline: 3px solid rgb(255, 255, 0);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
+
+.success__wrapper {
+  outline: 3px solid rgb(0, 255, 0);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
 
 .success__title {
@@ -15,12 +36,28 @@
   font-weight: 400;
   text-align: center;
   margin-bottom: 44px;
+  text-transform: uppercase;
 }
 
 .success__checkbox-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  outline: 3px solid rgb(0, 0, 255);
+  outline-offset: -3px;
+
+  // @media (min-width: $tablet-width) {
+  //   margin-left: 60px;
+  //   margin-right: 60px;
+  // }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+  }
 }
 
 .success__progress-item:not(:last-child) {

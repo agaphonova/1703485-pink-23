@@ -1,5 +1,12 @@
 .send {
   margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .send__button {
@@ -15,6 +22,10 @@
   border-radius: 1px;
   width: 100%;
   margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
 }
 
 .send__attantion {

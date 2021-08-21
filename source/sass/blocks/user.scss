@@ -1,0 +1,17 @@
+.user {
+  outline: 3px solid rgb(0, 0, 255);
+  outline-offset: -3px;
+  order: 1;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 74px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 5px 5px;
+  }
+}

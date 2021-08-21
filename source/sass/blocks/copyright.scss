@@ -1,11 +1,12 @@
 .copyright {
   display: flex;
-  justify-content: center;
   margin-bottom: 40px;
   align-items: center;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    justify-content: flex-end;
   }
 }
 

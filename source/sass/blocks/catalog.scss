@@ -1,3 +1,16 @@
 .catalog {
   margin-bottom: 29px;
+  display: grid;
+
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

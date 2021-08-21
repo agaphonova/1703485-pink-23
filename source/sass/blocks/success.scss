@@ -1,4 +1,5 @@
 .success {
+  order: 2;
   background-color: $grey-background;
   padding: 42px 20px;
   // padding-top: 42px;
@@ -10,10 +11,12 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
+    order: 4;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    padding: 0;
   }
 }
 

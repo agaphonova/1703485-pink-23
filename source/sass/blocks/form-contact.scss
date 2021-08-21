@@ -1,7 +1,13 @@
 .form-contact {
+  order: 3;
   padding-top: 42px;
   outline: 3px solid rgb(255, 255, 0);
   outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    width: 100%;
+  }
 }
 
 .form-contact__wrapper {
@@ -10,8 +16,8 @@
   outline: 3px solid rgb(0, 255, 0);
   outline-offset: -3px;
 
-  @media (min-width: $desktop-width) {
-    padding: 0 130px;
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
   }
 }
 
@@ -41,9 +47,9 @@
   outline: 3px solid rgb(0, 0, 255);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 60px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   margin-left: 60px;
+  // }
 
   @media (min-width: $desktop-width) {
     display: grid;

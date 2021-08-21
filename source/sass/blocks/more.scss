@@ -1,6 +1,12 @@
 .more {
+  order: 5;
   background-color: $basic-white;
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    width: 100%;
+  }
 }
 
 .more__wrapper {
@@ -8,7 +14,8 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    padding: 0;
+    margin: 0;
   }
 }
 

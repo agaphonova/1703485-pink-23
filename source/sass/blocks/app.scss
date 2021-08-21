@@ -1,4 +1,5 @@
 .app {
+  order: 4;
   outline: 3px solid rgb(255, 255, 0);
   outline-offset: -3px;
 
@@ -8,6 +9,8 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
+    order: 2;
+    flex-grow: 1;
   }
 }
 
@@ -16,7 +19,7 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    padding: 0;
   }
 }
 

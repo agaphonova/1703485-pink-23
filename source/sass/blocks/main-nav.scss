@@ -1,6 +1,19 @@
-// .main-nav {
-// // display: none;
-// }
+.main-nav__wrapper {
+  outline: 3px solid (0, 255, 0);
+  outline-offset: -3px;
+
+  @media (max-width: $desktop-width-less) {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
@@ -36,11 +49,35 @@
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: $basic-pink;
+  box-shadow: 0 10px 0 0 $basic-pink, 0 20px 0 0 $basic-pink;
+}
+
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 10px 0 0 fade(#ffffff, 30%),
-    0 20px 0 0 fade(#ffffff, 30%);
+  background-color: $basic-pink;
+  box-shadow: 0 10px 0 0 $basic-pink, 0 20px 0 0 $basic-pink;
+  opacity: 0.3;
+}
+
+.main-nav--closed .site-list__item {
+  @media (max-width: $desktop-width-less) {
+    display: none;
+  }
+}
+
+.main-nav--opened .site-list__item {
+  @media (max-width: $desktop-width-less) {
+    display: block;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -73,20 +110,15 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-  &:active::before,
-  &:active::after {
-    background-color: fade(#ffffff, 30%);
-  }
 }
 
-.main-nav__wrapper {
-  outline: 3px solid (0, 255, 0);
-  outline-offset: -3px;
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: $basic-pink;
+}
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: $basic-pink;
+  opacity: 0.3;
 }

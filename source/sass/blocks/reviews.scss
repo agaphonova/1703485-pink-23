@@ -17,6 +17,10 @@
 .reviews__author-info {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 104px;
+  }
 }
 
 .reviews__author-name {
@@ -70,4 +74,55 @@
     font-size: 18px;
     order: 1;
   }
+}
+
+.reviews__slider-button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__slider-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  top: 35px;
+  left: 0;
+  right: 0;
+  width: 78%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.next,
+.previous {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-style: none;
+  border-image: none;
+  border-color: transparent;
+
+  fill: $basic-text;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.next {
+  transform: rotate(180deg);
 }

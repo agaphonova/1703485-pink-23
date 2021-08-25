@@ -1,4 +1,29 @@
 
+.slider {
+  position: relative;
+}
+
+.slider__list {
+  position: relative;
+
+  &::before {
+    display: none;
+    content: "";
+    background: url("../../img/quotes.svg") no-repeat;
+    background-size: contain;
+    width: 79px;
+    height: 63px;
+    position: absolute;
+    top: -115px;
+    right: 46%;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+
 .slider__toggles {
   margin: 0 auto;
   padding: 0;

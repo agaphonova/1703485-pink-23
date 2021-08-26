@@ -3,23 +3,25 @@
 // flex-direction: column;
 // }
 
-// .tunning__wrap {
-// display: grid;
-// grid-template-columns: 1fr 1fr;
-// }
+.tunning__wrap {
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
 
 .tunning-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 39px;
 
-  @media (min-width: $tablet-width) {
-    flex-direction: column;
+  @media (max-width: $tablet-width-only) {
+    padding: 0 40px;
+    display: block;
   }
 }
 
@@ -31,6 +33,11 @@
   justify-content: space-between;
   align-content: space-between;
   padding-bottom: 22px;
+  align-items: center;
+
+  @media (max-width: $tablet-width-only) {
+    display: block;
+  }
 }
 
 .tunning-range-list {
@@ -52,4 +59,49 @@
   @media (max-width: $tablet-width-only) {
     display: none;
   }
+}
+
+.retouch-range {
+  position: relative;
+  // padding-top: 22px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 39px;
+  }
+
+  &--using-tablet {
+    @media (max-width: $tablet-width-only) {
+      display: none;
+      // visibility: hidden;
+      // appearance: none;
+    }
+  }
+}
+
+.retouch-range-scale {
+  height: 2px;
+  background-color: $basic-text;
+  // position: relative;
+  // top: 10px;
+}
+
+.retouch-range-bar {
+  height: 2px;
+  width: 75%;
+  background-color: $basic-text;
+}
+
+.retouch-range-handle {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  box-sizing: content-box;
+  padding: 0;
+  border: 2px solid $basic-pink;
+  border-radius: 50%;
+  background-color: $basic-white;
+  cursor: pointer;
 }

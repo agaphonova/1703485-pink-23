@@ -1,20 +1,25 @@
 .page-main {
   // width: $mobile-width;
   border-color: $basic-white;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 54px;
+  }
 }
 
 .page-main__catalog-wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding: 54px 40px 60px 40px;
+  padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     min-width: 620px;
-    padding: 100px 110px 85px 110px;
+    text-align: center;
+    padding: 100px 0 85px 0;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 100px 310px 97px 310px;
+    padding: 100px 0 97px 0;
     min-width: 940px;
   }
 }
@@ -32,5 +37,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 580px;
   }
 }

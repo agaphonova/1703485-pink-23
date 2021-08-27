@@ -41,6 +41,19 @@
   color: $basic-white;
   text-decoration: none;
 
+  &:hover {
+    color: $basic-pink;
+  }
+
+  &:active {
+    color: $basic-pink;
+    opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: $basic-white;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;

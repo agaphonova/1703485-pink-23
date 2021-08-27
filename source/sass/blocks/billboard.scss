@@ -1,5 +1,5 @@
 .billboard {
-  background: url("../../img/panorama.jpg") no-repeat;
+  background: url("../img/panorama.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -16,6 +16,16 @@
   @media (min-width: $desktop-width) {
     min-width: 940px;
     height: 506px;
+  }
+}
+
+.billboard__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
   }
 }
 

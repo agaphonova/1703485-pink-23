@@ -10,6 +10,19 @@
   }
 }
 
+.copyright svg {
+  fill: $basic-pink;
+
+  &:hover {
+    fill: $basic-text;
+  }
+
+  &:active {
+    fill: $basic-text;
+    opacity: 0.3;
+  }
+}
+
 .copyright__title {
   display: block;
   text-decoration: none;

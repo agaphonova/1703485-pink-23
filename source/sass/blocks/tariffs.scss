@@ -1,7 +1,7 @@
 .tariffs {
   margin-bottom: 50px;
   padding-bottom: 50px;
-  background: url("../../img/grey-background-tarif.png") no-repeat;
+  background: url("../img/grey-background-tarif.png") no-repeat;
   background-position: 100%;
   background-size: cover;
 
@@ -67,4 +67,11 @@
 
 .tariffs__item {
   background-color: $basic-text;
+
+  &--standart {
+    @media (min-width: $tablet-width) {
+      border-left: 2px solid $grey-background;
+      border-right: 2px solid $grey-background;
+    }
+  }
 }

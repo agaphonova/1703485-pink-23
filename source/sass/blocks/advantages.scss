@@ -6,6 +6,7 @@
 
   @media (min-width: $desktop-width) {
     background-position: 0 0;
+    margin-bottom: 193px;
   }
 }
 
@@ -33,7 +34,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 42px;
+    // grid-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,29 +157,17 @@
 }
 
 .advantages__stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 0 20px;
-  grid-gap: 72px;
+  padding-left: 50%;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
-    padding-top: 54px;
+    padding-top: 102px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 130px;
     padding-bottom: 67px;
     background-color: $grey-background;
-  }
-}
-
-.advantages__stats-img {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }

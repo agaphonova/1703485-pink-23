@@ -1,14 +1,18 @@
 .option {
-  padding: 19px 17px 19px 20px;
+  padding: 0 25px 0 20px;
+  height: 59px;
   border: 2px solid $grey-border;
   background-color: $grey-cell;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    // display: block;
     text-align: center;
-    padding: 19px 0;
+    // padding: 19px 0;
+    height: 45px;
+    justify-content: center;
   }
 }
 
@@ -22,7 +26,6 @@
     display: none;
   }
 }
-
 
 .tariffs__option {
   color: $basic-text;
@@ -45,7 +48,7 @@
 
     &--tablet {
       display: block;
-      padding: 19px 0 19px 15px;
+      padding: 14px 0 15px 15px;
       border: 2px solid $grey-border;
       background-color: $grey-cell;
     }
@@ -53,13 +56,15 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    padding: 17px 0 17px 15px;
+    padding: 12px 0 13px 15px;
   }
 }
 
 .option__cell {
   margin: 0;
   padding: 0;
+
+  width: 21px;
 }
 
 .option__input {

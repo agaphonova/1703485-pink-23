@@ -40,6 +40,16 @@
   }
 }
 
+.tunning-list__item svg {
+  fill: $basic-pink;
+  opacity: 1;
+
+  &:hover {
+    fill: $basic-text;
+    opacity: 0.5;
+  }
+}
+
 .tunning-range-list {
   @media (min-width: $tablet-width) {
     display: none;
@@ -51,6 +61,31 @@
   width: 240px;
   margin: 0 auto;
   margin-bottom: 34px;
+}
+
+.crop__img {
+  @media (min-width: $tablet-width-only) and (max-width: $desktop-width-less) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.fill__img {
+  @media (min-width: $tablet-width-only) and (max-width: $desktop-width-less) {
+    width: 24px;
+    height: 22px;
+  }
+}
+
+.contrast__img {
+  @media (min-width: $tablet-width-only) and (max-width: $desktop-width-less) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 6px;
+  }
 }
 
 .crop__img,
@@ -104,4 +139,8 @@
   border-radius: 50%;
   background-color: $basic-white;
   cursor: pointer;
+
+  &:active {
+    background-color: $basic-pink;
+  }
 }

@@ -30,7 +30,7 @@
   outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
-    top: 33px;
+    top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,6 +58,11 @@
   background-color: $basic-pink;
   box-shadow: 0 10px 0 0 $basic-pink, 0 20px 0 0 $basic-pink;
   opacity: 0.3;
+}
+
+.main-nav--closed .main-nav__toggle:visited::before {
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
 .main-nav--closed .site-list__item {
@@ -88,7 +93,7 @@
   height: 30px;
 
   @media (min-width: $tablet-width) {
-    top: 33px;
+    top: 41px;
   }
 
   &::before,
@@ -121,4 +126,8 @@
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: $basic-pink;
   opacity: 0.3;
+}
+
+.main-nav--opened ~ .page-header__wrapper {
+  background-color: $basic-text;
 }

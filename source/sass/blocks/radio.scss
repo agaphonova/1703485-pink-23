@@ -1,6 +1,7 @@
 .radio {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .radio__input {
@@ -9,26 +10,43 @@
   display: inline-block;
   width: 1px;
   height: 1px;
-  background-color: $basic-white;
   clip: rect(0 0 0 0);
 }
 
 .radio__element {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 37px;
   height: 37px;
   border: 2px solid $grey-border;
   border-radius: 50%;
   background-color: $basic-white;
+
+  &:hover {
+    border: 2px solid $basic-text;
+  }
+
+  &:active {
+    border: 2px solid $basic-pink;
+  }
+
+  &::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 11px;
+    left: 11px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $basic-pink;
+  }
 }
 
-.radio__input:checked + .radio__element {
-  background-color: $basic-pink;
-  width: 15px;
-  height: 15px;
-  border: 11px solid $basic-white;
-  border-radius: 50%;
-  background-size: contain;
+
+.radio__input:checked + .radio__element::after {
+  display: block;
 }
 
 .radio__label {

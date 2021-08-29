@@ -101,6 +101,16 @@
     }
   }
 
+  &:hover {
+    outline: none;
+    border: 2px solid $basic-text;
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid $basic-pink;
+  }
+
   &::placeholder {
     color: $basic-text;
     font-size: 18px;

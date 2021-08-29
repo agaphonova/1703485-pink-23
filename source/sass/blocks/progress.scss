@@ -25,4 +25,12 @@
     content: url("../img/tick.svg");
     background-size: contain;
   }
+
+  &:hover {
+    border: 2px solid $basic-text;
+  }
+
+  &:active {
+    border: 2px solid $basic-pink;
+  }
 }

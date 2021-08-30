@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -23,12 +24,32 @@
   width: 100%;
   margin-bottom: 46px;
 
+  &:hover {
+    background-color: $basic-btn-hover;
+    border: 2px solid $basic-btn-hover;
+  }
+
+  &:active {
+    color: $basic-white-opacity;
+  }
+
+  &:disabled {
+    background-color: $radio-grey-border;
+    border: 2px solid $radio-grey-border;
+  }
+
   @media (min-width: $tablet-width) {
     width: 296px;
+    margin-bottom: 0;
   }
 }
 
 .send__attantion {
   color: $basic-text;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.send__mark {
+  color: $basic-pink;
 }

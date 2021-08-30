@@ -1,6 +1,7 @@
 // root
 $basic-black: #000000;
 $basic-white: #ffffff;
+$basic-white-opacity: rgba(255, 255, 255, 0.3);
 $basic-text: #283645;
 $basic-pink: #d22856;
 $basic-pink-active: rgba(210, 40, 86, 0.3);
@@ -9,9 +10,12 @@ $grey-cell: rgba(255, 255, 255, 1);
 $grey-menu-color: rgba(0, 0, 0, 0.3);
 $grey-background: #f2f2f2;
 $basic-btn: #2aab6d;
+$basic-btn-hover: #1c9b5e;
 $catalog-grey-border: rgba(40, 54, 69, 0.1);
+$catalog-grey-opacity: rgba(40, 54, 69, 0.3);
 $blue-shadow: #485461;
 $inset-site-list-shadow: rgba(72, 84, 97, 0.15);
+$radio-grey-border: #e5e5e5;
 
 // Viewports
 
@@ -21,3 +25,4 @@ $desktop-width: 1200px;
 $tablet-width-only: 659px;
 $mobile-width-more: 321px;
 $desktop-width-less: 1199px;
+$desktop-width-more: 1400px;

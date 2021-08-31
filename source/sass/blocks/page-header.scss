@@ -7,6 +7,7 @@
     background: url("../img/back-tablet.jpg") no-repeat;
     background-position: 50% -7px;
     background-size: cover;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,8 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 940px;
-    margin: 0 auto;
+    margin: 0 130px;
   }
 }
 

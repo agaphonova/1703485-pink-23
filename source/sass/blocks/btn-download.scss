@@ -19,4 +19,10 @@
     background-color: $basic-white;
     color: $basic-pink-active;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    background: transparent;
+    z-index: 2;
+  }
 }

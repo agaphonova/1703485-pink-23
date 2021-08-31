@@ -5,7 +5,9 @@
 
   @media (min-width: $tablet-width) {
     background: none;
-    width: 280px;
+    width: 329px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -42,5 +44,14 @@
   color: $basic-white;
   padding: 0;
   text-align: center;
-  margin: 0 20px;
+  // margin: 0 20px;
+  width: 48%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    // margin: 0;
+    width: 90%;
+  }
+
 }

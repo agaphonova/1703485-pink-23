@@ -267,7 +267,12 @@
           <h2 class="download__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
           <div class="download__content">
             <div class="download__image">
-              <img class="download__img" src="img/photo-7-tablet.svg" width="280" height="374" alt="заснеженная дорога">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="mg/tuning-tablet-1x.jpg 1x, img/tuning-tablet-2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/tuning-tablet-1x.jpg 1x, img/tuning-tablet-2x.jpg 2x">
+                <img src="img/tuning-mobile-1x.jpg" srcset="img/tuning-mobile-2x.jpg 2x" alt="заснеженная дорога">
+              </picture>
+              <!-- <img class="download__img" src="img/photo-7-tablet.svg" width="280" height="374" alt="заснеженная дорога"> -->
             </div>
             <div class="tunning-icons icons-list">
               <svg class="icons-list__item icons-list__item--active" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">

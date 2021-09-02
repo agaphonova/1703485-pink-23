@@ -54,6 +54,7 @@
 .form-area {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -90,7 +91,7 @@
   width: 100%;
   border: 2px solid $grey-border;
   border-radius: 1px;
-  padding: 23px 20px 23px 20px;
+  padding: 20px 20px;
   margin-bottom: 29px;
 
   &:focus {
@@ -124,4 +125,22 @@
 
 .form-area__icon {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 19px 20px;
+    // padding-top: 20px;
+    // padding-right: 20px;
+    // width: 30px;
+    // height: 30px;
+    background-color: $radio-grey-border;
+    top: 0;
+    right: 0;
+
+    &--mail {
+      padding: 22px 20px;
+    }
+  }
 }

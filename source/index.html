@@ -80,9 +80,9 @@
         <div class="promo__wrapper">
           <h1 class="promo__slogan">Взгляните на жизнь иначе!</h1>
           <picture>
-            <img class="promo__img" src="img/hand-mobile.png" width="320" height="286" srcset="img/hand-mobile-2x.png" alt="смартфон в руке">
-            <source srcset="img/hand-mobile-2x.webp">
-            <source srcset="img/hand-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/hand-mobile.png 1x, img/hand-mobile-2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/hand-mobile.png 1x, img/hand-mobile-2x.png 2x">
+            <img class="promo__img" src="img/hand-mobile.png" srcset="img/hand-mobile-2x.png 2x" alt="смартфон в руке">
           </picture>
           <div class="store">
             <div class="store__wrapper">
@@ -126,9 +126,9 @@
               <ul class="advantages__list">
                 <li class="advantages__item advantages__item--mood">
                   <picture>
-                    <img class="advantages__image-desktop" width="186px" height="301px" src="img/mood-1x.png" srcset="img/mood-2x.png"  alt="поднимает настроение">
-                    <!-- <source srcset="img/iphone-smile-mobile-1x.webp">
-                    <source srcset="img/iphone-smile-mobile-2x.webp"> -->
+                    <source media="(min-width: 1200px)" srcset="img/mood-1x.png 1x, img/mood-2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/mood-1x.png 1x, img/mood-2x.png 2x">
+                    <img class="advantages__image-desktop" src="img/mood-1x.png" srcset="img/mood-2x.png 2x" alt="поднимает настроение">
                   </picture>
                   <span class="advantages__shadow"></span>
                   <h3 class="advantages__title">Поднимает настроение</h3>
@@ -136,9 +136,9 @@
                 </li>
                 <li class="advantages__item advantages__item--change">
                   <picture>
-                    <img class="advantages__image-desktop" width="186px" height="301px" src="img/world-1x.png" srcset="img/world-2x.png"  alt="меняет мир вокруг">
-                    <!-- <source srcset="img/iphone-smile-mobile-1x.webp">
-                    <source srcset="img/iphone-smile-mobile-2x.webp"> -->
+                    <source media="(min-width: 1200px)" srcset="img/world-1x.png 1x, img/world-2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/world-1x.png 1x, img/world-2x.png 2x">
+                    <img class="advantages__image-desktop" src="img/world-1x.png" srcset="img/world-2x.png 2x" alt="меняет мир вокруг">
                   </picture>
                   <span class="advantages__shadow"></span>
                   <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -146,9 +146,9 @@
                 </li>
                 <li class="advantages__item advantages__item--friend">
                   <picture>
-                    <img class="advantages__image-desktop" width="186px" height="301px" src="img/friends-1x.png" srcset="img/friends-2x.png"  alt="заводит друзей">
-                    <!-- <source srcset="img/iphone-smile-mobile-1x.webp">
-                    <source srcset="img/iphone-smile-mobile-2x.webp"> -->
+                    <source media="(min-width: 1200px)" srcset="img/friends-1x.png 1x, img/friends-2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/friends-1x.png 1x, img/friends-2x.png 2x">
+                    <img class="advantages__image-desktop" src="img/friends-1x.png" srcset="img/friends-2x.png 2x" alt="меняет мир вокруг">
                   </picture>
                   <span class="advantages__shadow"></span>
                   <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -156,11 +156,9 @@
                 </li>
               </ul>
               <picture>
-                <img class="advantages__img" src="img/iphone-smile-mobile-1x.png" srcset="img/iphone-smile-mobile-2x.png"  alt="телефон всем привет">
-                <source srcset="img/iphone-smile-mobile-1x.webp">
-                <source srcset="img/iphone-smile-mobile-2x.webp">
-                <source media="(min-width: 768px)" srcset="img/iphone-smile-tablet-1x.png 1x, img/iphone-smile-tablet-2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/iphone-smile-tablet-1x.webp 1x, img/iphone-smile-tablet-2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/iphone-smile-tablet-1x.png 1x, img/iphone-smile-tablet-2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-smile-tablet-1x.png 1x, img/iphone-smile-tablet-2x.png 2x">
+                <img class="advantages__img" src="img/iphone-smile-tablet-1x.png" srcset="img/friends-2x.png 2x" alt="телефон всем привет">
               </picture>
             </div>
           </div>

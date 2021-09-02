@@ -54,7 +54,7 @@
 .form-area {
   display: flex;
   flex-direction: column;
-  position: relative;
+  // position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -86,13 +86,19 @@
   }
 }
 
+.form-area__input-wrap {
+  display: flex;
+  height: 59px;
+  width: 100%;
+}
+
 .form-area__input {
   box-sizing: border-box;
+  /* height: 59px; */
   width: 100%;
-  border: 2px solid $grey-border;
+  border: 2px solid #e9ebec;
   border-radius: 1px;
-  padding: 20px 20px;
-  margin-bottom: 29px;
+  padding: 17px 20px;
 
   &:focus {
     outline: none;
@@ -117,27 +123,16 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
-  }
 }
 
 .form-area__icon {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
+    display: inline-block;
     text-align: center;
-    padding: 19px 20px;
-    // padding-top: 20px;
-    // padding-right: 20px;
-    // width: 30px;
-    // height: 30px;
+    padding: 18px 19px;
     background-color: $radio-grey-border;
-    top: 0;
-    right: 0;
 
     &--mail {
       padding: 22px 20px;

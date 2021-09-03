@@ -54,6 +54,7 @@
 .form-area {
   display: flex;
   flex-direction: column;
+  // position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -85,13 +86,19 @@
   }
 }
 
+.form-area__input-wrap {
+  display: flex;
+  height: 59px;
+  width: 100%;
+}
+
 .form-area__input {
   box-sizing: border-box;
+  /* height: 59px; */
   width: 100%;
-  border: 2px solid $grey-border;
+  border: 2px solid #e9ebec;
   border-radius: 1px;
-  padding: 23px 20px 23px 20px;
-  margin-bottom: 29px;
+  padding: 17px 20px;
 
   &:focus {
     outline: none;
@@ -116,12 +123,19 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
-  }
 }
 
 .form-area__icon {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    text-align: center;
+    padding: 18px 19px;
+    background-color: $radio-grey-border;
+
+    &--mail {
+      padding: 22px 20px;
+    }
+  }
 }

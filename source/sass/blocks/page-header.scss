@@ -102,66 +102,44 @@
 }
 
 .page-header__logo {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 12px;
-  }
-}
-
-.page-header__logo-image {
-  width: 74px;
-  // height: 23px;
-
   fill: $basic-white;
 
-  &:hover {
+  &:hover .logo-mobile,
+  &:hover .logo-tablet,
+  &:hover .logo-desktop {
     fill: $basic-pink;
   }
 
-  &:active {
+  &:active .logo-mobile,
+  &:active .logo-tablet,
+  &:active .logo-desktop {
     fill: $basic-white;
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 12px;
+  }
+}
+
+.logo-mobile {
+  @media (min-width: $desktop-width) {
+    transform: translate(-31px, 0);
+  }
+}
+
+.logo-tablet {
+  display: inline-block;
+
+  @media (max-width: $tablet-width-only), (min-width: $desktop-width) {
     display: none;
   }
+}
 
-  &--tablet {
-    fill: $basic-white;
+.logo-desktop {
+  display: none;
 
-    &:hover {
-      fill: $basic-pink;
-    }
-
-    &:active {
-      fill: $basic-white;
-      opacity: 0.3;
-    }
-
-    @media (max-width: $tablet-width-only) {
-      display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-      display: block;
-      width: 145px;
-      height: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    @media (max-width: $desktop-width-less) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 147px;
-      height: 40px;
-    }
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }

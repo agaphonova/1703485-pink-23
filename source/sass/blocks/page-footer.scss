@@ -14,7 +14,9 @@
 }
 
 .footer-logo {
-  justify-self: flex-start;
+  @media (min-width: $tablet-width) {
+    justify-self: flex-start;
+  }
 }
 
 .footer-logo .logo-tablet {

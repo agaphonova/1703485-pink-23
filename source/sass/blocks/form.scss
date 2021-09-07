@@ -90,6 +90,10 @@
   display: flex;
   height: 59px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .form-area__input {

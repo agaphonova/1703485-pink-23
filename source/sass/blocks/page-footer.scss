@@ -12,3 +12,27 @@
     padding: 0 130px;
   }
 }
+
+.footer-logo {
+  @media (min-width: $tablet-width) {
+    justify-self: flex-start;
+  }
+}
+
+.footer-logo .logo-tablet {
+  fill: $basic-pink;
+}
+
+.footer-logo .logo-mobile {
+  fill: $basic-text;
+}
+
+.footer-logo:hover .logo-mobile {
+  fill: $basic-pink;
+}
+
+.footer-logo:active .logo-mobile,
+.footer-logo:active .logo-tablet,
+.footer-logo:active .logo-desktop {
+  opacity: 0.3;
+}

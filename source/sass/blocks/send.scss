@@ -50,6 +50,14 @@
   text-align: center;
 }
 
+.visually-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
 .send__mark {
   color: $basic-pink;
 }

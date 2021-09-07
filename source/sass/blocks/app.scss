@@ -1,20 +1,17 @@
 .app {
   order: 4;
-  padding: 0 20px;
-  // outline: 3px solid rgb(255, 255, 0);
-  // outline-offset: -3px;
-
+  padding: 42px 20px;
   background-color: $grey-background;
-  padding-top: 42px;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
     order: 2;
     flex-grow: 1;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding: 0;
   }
 }
 
@@ -56,9 +53,6 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
     padding-bottom: 54px;
   }
 }

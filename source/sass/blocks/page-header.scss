@@ -52,6 +52,12 @@
     align-items: center;
     margin: 0 130px;
   }
+
+  @media (min-width: $more-desktop) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .page-header__wrapper {

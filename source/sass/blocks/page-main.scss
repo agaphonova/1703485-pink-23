@@ -1,10 +1,6 @@
 .page-main {
   // width: $mobile-width;
   border-color: $basic-white;
-
-  @media (max-width: $tablet-width-only) {
-    margin-top: 54px;
-  }
 }
 
 .page-main__catalog-wrapper {

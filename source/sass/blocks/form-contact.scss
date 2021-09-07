@@ -1,23 +1,36 @@
 .form-contact {
   order: 3;
   padding-top: 42px;
-  outline: 3px solid rgb(255, 255, 0);
-  outline-offset: -3px;
+  padding-bottom: 42px;
+  // outline: 3px solid rgb(255, 255, 0);
+  // outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     order: 3;
+    padding: 0 20px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .form-contact__wrapper {
   padding: 0 20px;
   margin: 0 auto;
-  outline: 3px solid rgb(0, 255, 0);
-  outline-offset: -3px;
 
+  // @media (min-width: $tablet-width) {
+  //   border: 2px solid $radio-grey-border;
+  //   border-radius: 1px;
+  // outline: 3px solid rgb(0, 255, 0);
+  // outline-offset: -3px;
   @media (min-width: $tablet-width) {
-    padding: 0 60px;
+    border: 2px solid $radio-grey-border;
+    border-radius: 1px;
+    padding: 0;
   }
 }
 
@@ -26,15 +39,19 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 0;
+    font-size: 14px;
     padding: 0;
     color: $basic-pink;
     line-height: 18px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 41px;
     text-transform: uppercase;
+    background-color: $basic-white;
+    width: 260px;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 41px;
   }
 }
 
@@ -44,20 +61,22 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  outline: 3px solid rgb(0, 0, 255);
-  outline-offset: -3px;
+  // outline: 3px solid rgb(0, 0, 255);
+  // outline-offset: -3px;
 
-  // @media (min-width: $tablet-width) {
-  //   margin-left: 60px;
-  // }
+  @media (min-width: $tablet-width) {
+    // margin-left: 60px;
+    padding: 46px 60px 37px 60px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 74px;
+    padding-bottom: 0;
   }
 }
 
-// .form-contact__contact-info {
-//   display: flex;
-// }
+.form-contact__contact-info {
+  margin-bottom: 41px;
+}

@@ -12,5 +12,18 @@
   @media (min-width: $desktop-width) {
     padding: 0 130px;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $more-desktop) {
+    padding: 0;
+  }
+}
+
+.post__image {
+  img {
+    width: 100%;
   }
 }

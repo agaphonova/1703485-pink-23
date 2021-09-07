@@ -21,7 +21,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 130px;
-    min-width: 940px;
+    max-width: 940px;
+    margin: 0 auto;
     margin-bottom: 59px;
   }
 }
@@ -200,5 +201,7 @@
     padding: 0 130px;
     padding-bottom: 67px;
     background-color: $grey-background;
+    max-width: 940px;
+    margin: 0 auto;
   }
 }

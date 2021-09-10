@@ -49,7 +49,7 @@ const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(terser())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
 
@@ -59,14 +59,14 @@ exports.scripts = scripts;
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
   .pipe(squoosh())
-  .pipe(gulp.dest('build/img'));
+  .pipe(gulp.dest("build/img"));
 }
 
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(gulp.dest('build/img'));
+  .pipe(gulp.dest("build/img"));
 }
 
 exports.copyImages = copyImages;

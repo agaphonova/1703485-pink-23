@@ -33,17 +33,15 @@ const styles = () => {
 
 exports.styles = styles;
 
-//html
+// HTML
 
 const html = () => {
-  return gulp.src("source/**/*.html")
+  return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
-exports.html = html;
-
-//scripts
+// Scripts
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
@@ -55,21 +53,22 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-//images
+// Images
+
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(squoosh())
-  .pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"))
 }
 
-exports.optimizeImages = optimizeImages;
+exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/img"))
 }
 
-exports.copyImages = copyImages;
+exports.images = copyImages;
 
 // WebP
 
@@ -94,7 +93,8 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-//copy
+// Copy
+
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
@@ -110,7 +110,7 @@ const copy = (done) => {
 
 exports.copy = copy;
 
-//clean
+// Clean
 
 const clean = () => {
   return del("build");
@@ -133,24 +133,20 @@ const server = (done) => {
 exports.server = server;
 
 // Reload
-const reload = done => {
+
+const reload = (done) => {
   sync.reload();
   done();
- }
+}
 
 // Watcher
 
-// const watcher = () => {
-//   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-//   gulp.watch("source/js/script.js", gulp.series(scripts));
-//   gulp.watch("source/**/*.html", gulp.series(html, reload));
-// }
-
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch("source/*.html", gulp.series("html", reload));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
+
 // Build
 
 const build = gulp.series(
@@ -167,6 +163,9 @@ const build = gulp.series(
 );
 
 exports.build = build;
+
+// Default
+
 
 exports.default = gulp.series(
   clean,

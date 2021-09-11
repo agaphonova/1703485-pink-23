@@ -1,5 +1,5 @@
 {
-  "name": "bicycle",
+  "name": "",
   "private": true,
   "description": "",
   "devDependencies": {
@@ -30,7 +30,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "scripts": "gulp scripts",
     "sprite": "gulp sprite",

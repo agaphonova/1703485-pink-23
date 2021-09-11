@@ -2,10 +2,11 @@
   // outline: 3px solid rgb(0, 0, 255);
   // outline-offset: -3px;
   order: 1;
-  padding: 0 20px;
+  padding: 44px 20px;
 
   @media (min-width: $tablet-width) {
     order: 1;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

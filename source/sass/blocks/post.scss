@@ -4,14 +4,27 @@
   &--card {
     padding: 0 20px;
 
-    @media (min-width: $desktop-width) {
-      padding: 0 130px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      // padding: 0 130px;
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    // @media (min-width: $more-desktop) {
+    //   max-width: 940px;
+    //   margin: 0 auto;
+    //   padding: 0;
+    // }
   }
 
   &--item {
-    outline: 5px solid rgba(255, 0, 0, 0.8);
-    outline-offset: -5px;
+    // outline: 5px solid rgba(255, 0, 0, 0.8);
+    // outline-offset: -5px;
     width: 100%;
     transition: width 0.2s;
 

@@ -132,25 +132,35 @@
       </symbol>
     </svg>
     <header class="page-header">
-      <div class="page-header__line-menu page-header__line-menu--opened page-header__line-menu--closed">
+      <div class="page-header__line-menu page-header__line-menu--closed">
         <div class="page-header__header">
-          <div class="page-header__wrapper page-header__wrapper--catalog">
+          <div class="page-header__wrapper">
             <a class="page-header__logo" aria-label="логотип пинк">
               <svg class="logo-tablet" width="73" height="40" viewBox="0 0 73 40"><use xlink:href="#logo-icon-glass"></use></svg>
               <svg class="page-header__logo-image logo-desktop" width="100" height="40"><use xlink:href="#logo-icon-desktop"></use></svg>
               <svg class="page-header__logo-image logo-mobile" width="74" height="23"><use xlink:href="#logo-icon"></use></svg>
             </a>
           </div>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
-            <div class="main-nav__wrapper">
+          <nav class="main-nav">
+            <input id="main-nav__toggle" type="checkbox"/>
+            <label class="menu-btn" for="main-nav__toggle">
+              <span></span>
+            </label>
+            <!-- <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button> -->
               <ul class="main-nav__list site-list">
                 <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
                 <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фотографии</a></li>
-                <li class="site-list__item site-list__item--active"><a class="site-list__link" href="form.html">Конкурс</a></li>
+                <li class="site-list__item"><a class="site-list__link site-list__link--active" href="form.html">Конкурс</a></li>
                 <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
               </ul>
-            </div>
+            <!-- <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фотографии</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+              </ul>
+            </div> -->
           </nav>
         </div>
       </div>
@@ -174,7 +184,7 @@
               <div class="name">
                 <ul class="name__list">
                   <li class="name__item">
-                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Фамилия:</span> <input class="form-area__input" type="text" placeholder="Укажите фамилию *" /></label>
+                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Фамилия:</span> <input class="form-area__input" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" placeholder="Укажите фамилию *" /></label>
                   </li>
                   <li class="name__item">
                     <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Имя:</span> <input class="form-area__input" type="text" placeholder="Введите ваше имя *" /></label>
@@ -219,7 +229,7 @@
                   <label class="form-area form-area--reverse">
                     <span class="form-area__label">Номер телефона</span>
                     <span class="form-area__input-wrap">
-                      <input class="form-area__input" type="tel" placeholder="Номер, пожалуйста" />
+                      <input class="form-area__input" type="tel" pattern="^[0-9]+$" placeholder="Номер, пожалуйста" />
                       <span class="form-area__icon">
                         <svg width="20" height="19" viewBox="0 0 20 19"><use xlink:href="#icon-phone"></use></svg>
                       </span>
@@ -306,6 +316,31 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.min.js"></script>
+
+    <div class="modal modal-success">
+      <div class="modal__form-heading">
+        <p class="modal__form-title">Ваша заявка отправлена</p>
+        <p class="modal__form-description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы&nbsp; рассмотрим ее и оповестим&nbsp;вас.</p>
+      </div>
+      <div class="modal__form-button-wrapper">
+        <div class="modal__form-button send">
+          <button class="send__button btn send__button--success" type="submit" value="ЗАКРЫТЬ ОКНО">ЗАКРЫТЬ ОКНО</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-error">
+      <div class="modal__form-heading">
+        <p class="modal__form-title">Что-то пошло не так!</p>
+        <p class="modal__form-description">Проверьте поля, выделенные красным,
+          скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__form-button-wrapper">
+        <div class="modal__form-button send">
+          <button class="send__button btn send__button--error" type="submit" value="ОК">ОК</button>
+        </div>
+      </div>
+    </div>
+    <script src=js/script.js></script>
   </body>
 </html>

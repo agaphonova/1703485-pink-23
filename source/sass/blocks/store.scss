@@ -1,6 +1,6 @@
 .store {
   padding-bottom: 38px;
-  padding-top: 28px;
+  padding-top: 23px;
   background-color: $basic-text;
 
   @media (min-width: $tablet-width) {
@@ -12,19 +12,33 @@
 }
 
 .store__wrapper {
-  text-align: center;
-  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width-only) {
+    align-items: center;
+  }
 }
+
+// .store__content {
+//   margin-left: 46px;
+// }
 
 .store__list {
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  // justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  width: 200px;
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    margin-left: 46px;
+    margin-bottom: 27px;
+  }
 }
 
 .store__item {
@@ -45,12 +59,15 @@
   padding: 0;
   text-align: center;
   // margin: 0 20px;
-  width: 48%;
-  margin: 0 auto;
+  // width: 73%;
+  margin: 0 2px;
+  margin-top: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     // margin: 0;
     width: 90%;
+    margin-left: 0;
+    margin-top: 0;
   }
 }

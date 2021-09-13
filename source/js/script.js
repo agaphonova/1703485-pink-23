@@ -1,3 +1,16 @@
+var navColor = document.querySelector('.page-header__line-menu');
+var Toggle = document.querySelector('.menu-btn');
+
+Toggle.addEventListener('click', function() {
+  if (navColor.classList.contains('page-header__line-menu--closed')) {
+    navColor.classList.remove('page-header__line-menu--closed');
+    navColor.classList.add('page-header__line-menu--opened');
+  } else {
+    navColor.classList.add('page-header__line-menu--closed');
+    navColor.classList.remove('page-header__line-menu--opened');
+  }
+});
+
 // //slider
 // let slideIndex = 1;
 
@@ -54,18 +67,7 @@
 // });
 
 
-var navColor = document.querySelector('.page-header__line-menu');
-var Toggle = document.querySelector('.menu-btn');
 
-Toggle.addEventListener('click', function() {
-  if (navColor.classList.contains('page-header__line-menu--closed')) {
-    navColor.classList.remove('page-header__line-menu--closed');
-    navColor.classList.add('page-header__line-menu--opened');
-  } else {
-    navColor.classList.add('page-header__line-menu--closed');
-    navColor.classList.remove('page-header__line-menu--opened');
-  }
-});
 
 //modal
 // const contactLink = document.querySelector(".modal");

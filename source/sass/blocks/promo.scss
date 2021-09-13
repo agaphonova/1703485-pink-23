@@ -98,12 +98,13 @@
 
   @media (min-width: $tablet-width) {
     width: 85%;
-    top: -3px;
+    top: -18px;
     right: -38px;
   }
 
   @media (min-width: $desktop-width) {
     right: 100px;
+    top: -11px;
   }
 }
 

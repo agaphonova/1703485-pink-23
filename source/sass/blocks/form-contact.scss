@@ -77,6 +77,38 @@
   }
 }
 
-.form-contact__contact-info {
+.form-contact-phone {
+  // position: relative;
   margin-bottom: 41px;
+
+  &::before {
+    content: "";
+    background: url("../img/phone-icon.svg") no-repeat;
+    background-position: center;
+    position: relative;
+    top: 62px;
+    right: -331px;
+    width: 59px;
+    height: 59px;
+    padding: 20px;
+    background-color: $radio-grey-border;
+  }
+}
+
+.form__contact-mail {
+  // position: relative;
+  margin-bottom: 41px;
+
+  &::before {
+    content: "";
+    background: url("../img/mail-icon.svg") no-repeat;
+    position: relative;
+    background-position: center;
+    top: 64px;
+    right: -331px;
+    width: 59px;
+    height: 59px;
+    padding: 22px;
+    background-color: $radio-grey-border;
+  }
 }

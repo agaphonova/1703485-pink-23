@@ -3,8 +3,17 @@
   flex-direction: column;
   margin-bottom: 31px;
 
+  background: url("../img/back-mobile.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 119px;
+    background: none;
   }
 }
 

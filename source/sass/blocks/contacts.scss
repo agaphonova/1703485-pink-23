@@ -5,9 +5,13 @@
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,16 +25,18 @@
   font-size: 24px;
   color: $basic-text;
   line-height: 28px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 29px;
+    line-height: 54px;
+    margin-bottom: 27px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 50px;
-    line-height: 54px;
+    line-height: 68px;
+    margin-bottom: 38px;
   }
 }
 
@@ -56,10 +62,20 @@
 .contacts__item {
   &:nth-child(1) {
     order: 1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 4px;
+      margin-left: 29px;
+    }
   }
 
   &:nth-child(2) {
     order: 2;
+    margin: 6px 0;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 29px;
+    }
 
     @media (min-width: $desktop-width) {
       order: 3;
@@ -69,8 +85,12 @@
   &:nth-child(3) {
     justify-self: center;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 18px;
     order: 3;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 31px;
+    }
 
     @media (min-width: $desktop-width) {
       order: 2;
@@ -86,14 +106,13 @@
   color: $basic-text;
   margin: 0;
   padding: 0;
-  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: 4px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
   }
 }
 
@@ -108,7 +127,7 @@
   line-height: 33px;
   width: 241px;
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 3px;
 
   &--mail {
     &:hover {

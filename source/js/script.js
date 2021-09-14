@@ -28,60 +28,87 @@ Toggle.addEventListener('click', function() {
   }
 });
 
-// //slider
-// let slideIndex = 1;
+//slider reviews
 
-// showSlides(slideIndex);
+let slideIndex = 1;
 
-// function nextSlide() {
-//     showSlides(slideIndex += 1);
-// }
+showSlides(slideIndex);
 
-// function previousSlide() {
-//     showSlides(slideIndex -= 1);
-// }
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
 
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-//   }
+function previousSlide() {
+    showSlides(slideIndex -= 1);
+}
 
-// function showSlides(n) {
-//     let slides = document.getElementsByClassName("item");
-//     let dots = document.getElementsByClassName("current-slide");
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
 
-//     if (n > slides.length) {
-//         slideIndex = 1
-//     }
-//     if (n < 1) {
-//         slideIndex = slides.length
-//     }
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slider__item");
+    let dots = document.getElementsByClassName("slider__toggle");
 
-//     for (let slide of slides) {
-//         slide.style.display = "none";
-//     }
+    if (n > slides.length) {
+        slideIndex = 1
+    }
 
-//     for (i =0; i < dots.length; i ++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
 
-//     slides[slideIndex - 1].style.display = "block";
-//     dots[slideIndex - 1].className += " active";
-// }
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+
+    for (i =0; i < dots.length; i ++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 
 
+//slider tafiffs
 
+let slideTabIndex = 1;
 
-//modal
-// const contactLink = document.querySelector(".modal");
-// const contactPopup = document.querySelector(".modal-success");
-// const contactClose = contactPopup.querySelector(".modal__form-button");
+tableSlides(slideTabIndex);
 
-// contactLink.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   contactPopup.classList.add("modal-show");
-//   contactName.focus();
-// });
+function nextTableSlide() {
+    tableSlides(slideTabIndex += 1);
+}
 
-// contactClose.addEventListener("click", function () {
-//   contactPopup.classList.remove("modal-show");
-// });
+function previousTableSlide() {
+    tableSlides(slideTabIndex -= 1);
+}
+
+function currentTableSlide(n) {
+    tableSlides(slideTabIndex = n);
+  }
+
+function tableSlides(n) {
+  let slides = document.getElementsByClassName("tariffs__list-slider");
+  let dots = document.getElementsByClassName("option-toggle__btn");
+
+  if (n > slides.length) {
+    slideTabIndex = 1
+  }
+
+  if (n < 1) {
+    slideTabIndex = slides.length
+  }
+
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+
+  for (i =0; i < dots.length; i ++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideTabIndex - 1].style.display = "block";
+  dots[slideTabIndex - 1].className += " active";
+}

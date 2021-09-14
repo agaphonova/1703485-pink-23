@@ -64,7 +64,6 @@
 .form-area {
   display: flex;
   flex-direction: column;
-  // position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -139,19 +138,16 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  &:required:not(:empty):invalid {
+    border: 2px solid $modal-required;
+    // outline: 5px solid $modal-required;
+    // outline-offset: -5px;
+  }
 }
 
-// .form-area__icon {
-//   display: none;
-
-//   @media (min-width: $tablet-width) {
-//     display: inline-block;
-//     text-align: center;
-//     padding: 18px 19px;
-//     background-color: $radio-grey-border;
-
-//     &--mail {
-//       // padding: 22px 20px;
-//     }
-//   }
-// }
+.form-area__input-tel,
+.form-area__input-mail {
+  padding: 23px 20px;
+  width: calc(100% - 59px);
+}

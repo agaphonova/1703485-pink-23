@@ -9,7 +9,7 @@
   &::before {
     display: none;
     content: "";
-    background: url("../img/quotes.svg") no-repeat;
+    background: url("/img/quotes.svg") no-repeat;
     background-size: contain;
     width: 79px;
     height: 63px;
@@ -23,7 +23,6 @@
   }
 }
 
-
 .slider__toggles {
   margin: 0 auto;
   padding: 0;
@@ -33,7 +32,7 @@
   align-items: center;
 
   @media (max-width: $desktop-width-less) {
-    margin-top: 45px;
+    margin-top: -14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,15 +40,17 @@
   }
 }
 
-.slider__toggle {
+.slider__toggle,
+.option-toggle__btn {
   display: inline-block;
   width: 6px;
   height: 6px;
   background-color: $basic-text;
   opacity: 0.3;
   border-radius: 50%;
+  padding: 3px;
 
-  &--current {
+  &.active {
     opacity: 1;
     background-color: $basic-white;
     border: 3px solid $basic-text;

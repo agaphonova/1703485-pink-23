@@ -7,7 +7,7 @@
   font-size: 18px;
   font-weight: 700;
   color: $basic-white;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
   width: 280px;
   padding-top: 13px;
   padding-bottom: 12px;
@@ -29,5 +29,11 @@
     width: 300px;
     background: transparent;
     z-index: 2;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 74px;
   }
 }

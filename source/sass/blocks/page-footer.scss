@@ -1,5 +1,13 @@
 .page-footer {
-  padding: 40px 0;
+  padding: 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0;
+  }
 }
 
 .page-footer__wrapper {
@@ -21,10 +29,7 @@
 
 .footer-logo {
   fill: $basic-text;
-
-  @media (min-width: $tablet-width) {
-    justify-self: flex-start;
-  }
+  margin-left: 15px;
 
   &:hover .footer-logo__tablet,
   &:hover .footer-logo__desktop {
@@ -35,6 +40,11 @@
   &:active .footer-logo__desktop {
     fill: $basic-text;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: flex-start;
+    margin-left: 2px;
   }
 }
 

@@ -1,6 +1,6 @@
 .store {
-  padding-bottom: 38px;
-  padding-top: 23px;
+  padding-bottom: 32px;
+  padding-top: 28px;
   background-color: $basic-text;
 
   @media (min-width: $tablet-width) {
@@ -29,15 +29,17 @@
   align-items: center;
   // justify-content: space-around;
   list-style: none;
-  margin: 0;
   padding: 0;
   width: 200px;
-  margin-left: 14px;
+  margin: 0 2px 14px 16px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    margin-left: 46px;
-    margin-bottom: 27px;
+    margin: -8px 2px 29px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -8px 2px 45px 46px;
   }
 }
 

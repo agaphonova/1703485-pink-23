@@ -1,5 +1,13 @@
 .reviews {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__wripper {
@@ -33,12 +41,14 @@
   font-style: normal;
   text-align: center;
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 16px;
   order: 1;
 
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-bottom: 17px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 30px;
   }
 }
 
@@ -75,6 +85,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     order: 1;
+    margin-bottom: 37px;
   }
 }
 
@@ -97,6 +108,10 @@
   width: 78%;
   padding: 0;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .next,

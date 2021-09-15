@@ -1,5 +1,13 @@
 .page-footer {
-  padding: 40px 0;
+  padding: 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0;
+  }
 }
 
 .page-footer__wrapper {
@@ -20,25 +28,38 @@
 }
 
 .footer-logo {
+  fill: $basic-text;
+  margin-left: 15px;
+
+  &:hover .footer-logo__tablet,
+  &:hover .footer-logo__desktop {
+    fill: $basic-pink;
+  }
+
+  &:active .footer-logo__tablet,
+  &:active .footer-logo__desktop {
+    fill: $basic-text;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-self: flex-start;
+    margin-left: 2px;
   }
 }
 
-.footer-logo .logo-tablet {
-  fill: $basic-pink;
+.footer-logo__tablet {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
-.footer-logo .logo-mobile {
-  fill: $basic-text;
-}
+.footer-logo__desktop {
+  display: none;
 
-.footer-logo:hover .logo-mobile {
-  fill: $basic-pink;
-}
-
-.footer-logo:active .logo-mobile,
-.footer-logo:active .logo-tablet,
-.footer-logo:active .logo-desktop {
-  opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

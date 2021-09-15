@@ -1,101 +1,62 @@
 .site-list {
-  margin: 0;
-  padding: 0;
   background-color: $basic-text;
   list-style: none;
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: -100%;
-  left: 0;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
-    visibility: visible;
-    top: -64px;
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    right: -60px;
-    left: auto;
-    background: transparent;
-  }
-}
-
-.main-nav__btn {
-  opacity: 0;
-
-  &:checked ~ .menu-btn > span {
-    transform: rotate(45deg);
-    width: 31px;
-  }
-
-  &:checked ~ .menu-btn > span::before {
-    top: 0;
-    width: 31px;
-    transform: rotate(0);
-  }
-
-  &:checked ~ .menu-btn > span::after {
-    top: 0;
-    width: 31px;
-    transform: rotate(90deg);
-  }
-
-  &:checked ~ .site-list {
-    visibility: visible;
-    top: 68px;
-    z-index: 5;
-
-    @media (min-width: $tablet-width) {
-      top: 112px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    background: none;
+    text-transform: none;
   }
 }
 
 .site-list__item {
-  margin: 0;
-  padding: 0;
+  padding: 21px 0;
   text-align: center;
   border-bottom: 1px solid $basic-black;
   box-shadow: 0 1px 0 $blue-shadow, inset 0 1px 0 $inset-site-list-shadow;
 
-  &:hover .site-list__link {
-    color: $basic-pink;
-  }
-
-  &:active .site-list__link {
-    opacity: 0.3;
-  }
-
   @media (min-width: $desktop-width) {
-    color: $basic-white;
     border: none;
     box-shadow: none;
     padding: 13px 0;
-    padding-left: 79px;
+
+    &--active {
+      line-height: 18px;
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }
 
 .site-list__link {
-  margin: 0;
-  padding: 21px 0;
-  text-transform: uppercase;
-  display: block;
-  text-decoration: none;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: $basic-white;
+  text-decoration: none;
 
-  &--active {
-    line-height: 18px;
-    border-bottom: 2px solid $basic-white;
+  &:hover {
+    color: $basic-pink;
+  }
+
+  &:active {
+    color: $basic-pink;
+    opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: $basic-white;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    text-transform: none;
   }
 }

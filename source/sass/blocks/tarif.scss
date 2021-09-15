@@ -3,6 +3,11 @@
   text-align: center;
   padding-top: 18px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
 }
 
 .tarif__type {
@@ -18,7 +23,12 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .tarif__price {
@@ -27,5 +37,10 @@
   font-size: 18px;
   color: $basic-white;
   margin: 0;
-  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-family: "Open Sans Light", "Arial-Light", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }

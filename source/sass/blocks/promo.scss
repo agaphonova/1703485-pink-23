@@ -1,10 +1,24 @@
 .promo {
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
+  margin-bottom: 37px;
+
+  background: url("../img/back-mobile.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 119px;
+    margin-bottom: 162px;
+    background: none;
+    // margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 187px;
   }
 }
 
@@ -90,6 +104,14 @@
     margin-top: 96px;
     margin-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 26px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__img {
@@ -103,8 +125,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 100px;
-    top: -11px;
+    right: 154px;
+    top: 15px;
+    width: 100%;
   }
 }
 

@@ -8,11 +8,13 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    // display: block;
     text-align: center;
-    // padding: 19px 0;
     height: 45px;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 62px;
   }
 }
 

@@ -12,18 +12,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 162px;
+    padding-bottom: 116px;
     background: none;
-    // margin-bottom: 42px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 187px;
+    padding-bottom: 125px;
+    margin-bottom: 59px;
   }
 }
 
 .promo__wrapper {
-  // width: 280px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -46,24 +46,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 20px;
-    // width: 620px;
-
-    // &::before {
-    //   // display: none;
-    //   content: "";
-    //   background: url("../img/hand.png") no-repeat;
-    //   background-size: contain;
-    //   width: 643px;
-    //   height: 527px;
-    //   position: absolute;
-    //   top: 94px;
-    //   right: 0;
-    //   z-index: -1;
-
-    //   @media (min-resolution: 2dppx) {
-    //     background-image: url("../../img/hand-2x.png");
-    //   }
-    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +54,6 @@
     margin: 0 auto;
 
     &::before {
-      // display: none;
       width: 800px;
       height: 535px;
       top: 94px;

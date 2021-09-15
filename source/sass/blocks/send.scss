@@ -12,17 +12,16 @@
 
 .send__button {
   background-color: $basic-btn;
-  // border: none;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  padding: 23px 45px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
   color: $basic-white;
-  border: 2px solid $basic-btn;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  padding: 12px 44px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 29px;
   border-radius: 1px;
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
+  border: 1px solid $basic-btn;
 
   &:hover {
     background-color: $basic-btn-hover;

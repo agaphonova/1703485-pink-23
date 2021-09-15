@@ -1,7 +1,7 @@
 .more {
   order: 5;
   background-color: $basic-white;
-  padding-top: 42px;
+  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     order: 5;
@@ -18,10 +18,6 @@
   padding: 0 20px;
   margin: 0 auto;
 
-  // @media (min-width: $tablet-width) {
-
-  // }
-
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
@@ -30,13 +26,12 @@
 
 .more__emotion {
   margin-bottom: 52px;
-  // outline: 3px solid rgb(255, 0, 0);
-  // outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 60px 60px 60px;
+    padding: 0 60px 48px 50px;
     border: 2px solid $radio-grey-border;
     border-radius: 1px;
+    margin-bottom: 69px;
   }
 }
 
@@ -60,10 +55,15 @@
   border: 2px solid $grey-border;
   border-radius: 1px;
   height: 150px;
-  padding: 22px 25px 22px 20px;
+  padding: 9px 19px 32px 19px;
+
+  @media (min-width: $desktop-width) {
+    height: 72px;
+  }
 }
 
 textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
   border: none;
   resize: none;
   color: $basic-text;

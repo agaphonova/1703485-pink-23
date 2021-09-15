@@ -90,16 +90,17 @@
   }
 }
 
-
 // Скрытие модальных окон
 
 .modal-success {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+  display: none;
+}
+
+.modal-error {
+  display: none;
 }
 
 .modal-show {
-  display: block;
+  display: none;
   animation: bounce 0.6s;
 }

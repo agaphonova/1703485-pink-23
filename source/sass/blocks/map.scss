@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     height: 502px;
+    margin-bottom: 27px;
   }
 }
 
@@ -26,7 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -28rem;
+    height: 90%;
+    top: -25rem;
   }
 }
 

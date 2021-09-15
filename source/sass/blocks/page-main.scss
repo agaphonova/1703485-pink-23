@@ -1,21 +1,20 @@
 .page-main {
-  // width: $mobile-width;
   border-color: $basic-white;
 }
 
 .page-main__catalog-wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     min-width: 620px;
     text-align: center;
-    padding: 100px 0 85px 0;
+    padding: 79px 0 73px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 97px 0;
+    padding: 25px 0 88px;
     min-width: 940px;
   }
 }

@@ -1,7 +1,6 @@
 .catalog {
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   display: grid;
-
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -10,11 +9,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-row-gap: 39px;
     padding: 0 130px;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 940px;
     margin: 0 auto;
-    margin-bottom: 67px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $more-desktop) {

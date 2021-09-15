@@ -1,10 +1,5 @@
-.form {
-  padding-top: 54px;
-}
-
 .form__user-wrapper {
   padding: 0 20px;
-  // width: 280px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
@@ -14,12 +9,15 @@
 
 .form__slogan-wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 65px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 30px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     max-width: 756px;
     margin: 0 auto;
+    padding-top: 12px;
   }
 }
 
@@ -35,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 79px;
   }
 }
 
@@ -79,13 +77,17 @@
   line-height: 30px;
   color: $basic-pink;
   display: block;
-  margin-left: 20px;
-  margin-bottom: 15px;
+  margin-left: 23px;
+  margin-bottom: 3px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    // margin-left: 0;
+    margin-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
   }
 
   &--user-desktop {
@@ -100,20 +102,23 @@
   display: flex;
   height: 59px;
   width: 100%;
-  padding: 23px 59px 23px 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .form-area__input {
   box-sizing: border-box;
-  /* height: 59px; */
   width: 100%;
   border: 2px solid $grey-border;
   border-radius: 1px;
-  padding: 17px 20px;
+  padding: 14px 20px;
+  font-size: 21px;
 
   &:focus {
     outline: none;
@@ -141,13 +146,19 @@
 
   &:required:not(:empty):invalid {
     border: 2px solid $modal-required;
-    // outline: 5px solid $modal-required;
-    // outline-offset: -5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 17px;
   }
 }
 
 .form-area__input-tel,
 .form-area__input-mail {
+  width: 100%;
   padding: 23px 20px;
-  width: calc(100% - 59px);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 59px);
+  }
 }

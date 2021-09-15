@@ -42,6 +42,10 @@
     border-radius: 50%;
     background-color: $basic-pink;
   }
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+  }
 }
 
 
@@ -56,4 +60,8 @@
   line-height: 30px;
   color: $basic-text;
   margin-left: 68px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 60px;
+  }
 }

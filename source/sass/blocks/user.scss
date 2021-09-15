@@ -1,12 +1,11 @@
 .user {
-  // outline: 3px solid rgb(0, 0, 255);
-  // outline-offset: -3px;
   order: 1;
-  padding: 44px 20px;
+  padding: 40px 23px;
 
   @media (min-width: $tablet-width) {
     order: 1;
     padding-bottom: 0;
+    padding-top: 75px;
   }
 
   @media (min-width: $desktop-width) {

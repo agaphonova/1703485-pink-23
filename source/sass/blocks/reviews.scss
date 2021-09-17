@@ -50,6 +50,10 @@
     margin-bottom: 5px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__author-age {
@@ -114,12 +118,8 @@
   }
 }
 
-// .reviews__toggles {
-//   margin-top: -15px;
-// }
-
-.next,
-.previous {
+.reviews-control__next,
+.reviews-control__previous {
   background: transparent;
   cursor: pointer;
   border: none;
@@ -144,6 +144,40 @@
   }
 }
 
-.next {
+.reviews-control__next {
   transform: rotate(180deg);
+}
+
+.reviews__toggles {
+  margin: 0 auto;
+  padding: 0;
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: $basic-text;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding: 3px;
+
+  &.active {
+    opacity: 1;
+    background-color: $basic-white;
+    border: 3px solid $basic-text;
+  }
 }

@@ -1,0 +1,39 @@
+.footer-logo {
+  display: block;
+  fill: $basic-text;
+  margin: 0;
+  padding: 0;
+  margin-left: 17px;
+
+  &:hover .footer-logo__tablet,
+  &:hover .footer-logo__desktop {
+    fill: $basic-pink;
+  }
+
+  &:active .footer-logo__tablet,
+  &:active .footer-logo__desktop {
+    fill: $basic-text;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: flex-start;
+    margin-left: 2px;
+  }
+}
+
+.footer-logo__tablet {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.footer-logo__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

@@ -1,8 +1,8 @@
 .page-footer {
-  padding: 41px 0;
+  padding: 34px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 0;
+    padding: 41px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,42 +38,5 @@
 
   @media (min-width: $more-desktop) {
     padding: 0;
-  }
-}
-
-.footer-logo {
-  fill: $basic-text;
-  margin-left: 15px;
-
-  &:hover .footer-logo__tablet,
-  &:hover .footer-logo__desktop {
-    fill: $basic-pink;
-  }
-
-  &:active .footer-logo__tablet,
-  &:active .footer-logo__desktop {
-    fill: $basic-text;
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    justify-self: flex-start;
-    margin-left: 2px;
-  }
-}
-
-.footer-logo__tablet {
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.footer-logo__desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }

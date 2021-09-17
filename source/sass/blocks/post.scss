@@ -26,6 +26,12 @@
   }
 }
 
+.post__image {
+  img {
+    width: 100%;
+  }
+}
+
 .post__wrapper {
   padding: 14px 14px 17px;
   background-color: $grey-background;

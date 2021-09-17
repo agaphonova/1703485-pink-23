@@ -36,6 +36,7 @@
 }
 
 .more__title {
+  display: block;
   color: $basic-pink;
   line-height: 18px;
   margin-bottom: 22px;
@@ -57,12 +58,22 @@
   height: 150px;
   padding: 9px 19px 32px 19px;
 
+  &:hover {
+    outline: none;
+    border: 2px solid $basic-text;
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid $basic-pink;
+  }
+
   @media (min-width: $desktop-width) {
     height: 72px;
   }
 }
 
-textarea {
+.more__window-content {
   font-family: "Open Sans", "Arial", sans-serif;
   border: none;
   resize: none;

@@ -1,0 +1,20 @@
+.fill {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   display: grid;
+  // }
+}
+
+.fill__img {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width-only) and (max-width: $desktop-width-less) {
+    width: 24px;
+    height: 22px;
+  }
+}

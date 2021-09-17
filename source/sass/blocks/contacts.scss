@@ -79,6 +79,8 @@
 
     @media (min-width: $desktop-width) {
       order: 3;
+      margin-right: 29px;
+      margin-top: 3px;
     }
   }
 
@@ -140,4 +142,44 @@
       opacity: 0.3;
     }
   }
+}
+
+.contacts__map {
+  position: relative;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    margin-bottom: 22px;
+  }
+}
+
+.contacts__element {
+  display: block;
+  position: absolute;
+  top: -12rem;
+  background: url("../img/triangle.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    top: -22rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 90%;
+    top: -25rem;
+  }
+}
+
+.contacts__element-map {
+  width: 100%;
+  height: 100%;
+  border-width: 0;
 }

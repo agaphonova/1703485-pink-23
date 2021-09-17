@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet-width) {
     background-position: 0 130px;
-    margin-bottom: 55px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
     background-position: 0 210px;
-    margin-bottom: 182px;
+    margin-bottom: 200px;
   }
 }
 
@@ -28,7 +28,7 @@
     padding: 0 130px;
     max-width: 940px;
     margin: 0 auto;
-    margin-bottom: 59px;
+    margin-bottom: 83px;
   }
 }
 
@@ -63,26 +63,23 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 82px 0 0;
+  margin: 86px 0 0;
 
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-top: 85px;
+    margin-top: 86px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 35px;
-    margin-top: 49px;
+    grid-gap: 18px;
+    margin-top: 56px;
   }
 }
 
 .advantages__item {
-  @media (min-width: $tablet-width) {
-    text-align: start;
-  }
-
   @media (min-width: $desktop-width) {
     min-width: 252px;
     text-align: center;
@@ -93,7 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -105,6 +102,7 @@
   font-family: "Open Sans Light", "Arial-Light", sans-serif;
   padding: 0;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   color: $basic-text;
   text-align: center;
@@ -132,7 +130,7 @@
 }
 
 .advantages__slogan-answer {
-  margin-top: 22px;
+  margin-top: 34px;
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
@@ -165,6 +163,10 @@
   padding: 0;
   margin-bottom: 14px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
@@ -180,12 +182,17 @@
   padding: 0;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 240px;
+    margin: 0 auto;
+    // text-indent: 9px;
+    // padding: 0px 7px;
+    // text-align: center;
   }
 }
 
@@ -222,7 +229,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
-    padding-top: 80px;
+    padding-top: 91px;
   }
 
   @media (min-width: $desktop-width) {

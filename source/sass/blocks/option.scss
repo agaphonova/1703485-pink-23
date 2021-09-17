@@ -9,12 +9,12 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    height: 45px;
+    height: 43px;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    height: 62px;
+    height: 57px;
   }
 }
 
@@ -29,55 +29,13 @@
   }
 }
 
-.tariffs__option {
-  color: $basic-text;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-}
-
-.tariffs__option-title {
-  color: $basic-text;
-
-  @media (min-width: $mobile-width) {
-    &--tablet {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-
-    &--tablet {
-      display: block;
-      padding: 11px 0 15px 15px;
-      border: 2px solid $grey-border;
-      background-color: $grey-cell;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    padding: 19px 0 19px 15px;
-  }
-}
-
 .option__cell {
   margin: 0;
   padding: 0;
-
   width: 21px;
 }
 
 .option__input {
   width: 37px;
   height: 37px;
-}
-
-.option-toggle {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }

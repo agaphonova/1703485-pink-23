@@ -1,7 +1,8 @@
 .page-header {
   background: url("../img/back-mobile.jpg") no-repeat;
   background-size: cover;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
+  background-color: $basic-text;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile-2x.jpg");
@@ -118,15 +119,15 @@
 .page-header__logo {
   fill: $basic-white;
 
-  &:hover .logo-mobile,
-  &:hover .logo-tablet,
-  &:hover .logo-desktop {
+  &:hover .page-header__logo-image-mobile,
+  &:hover .page-header__logo-image-tablet,
+  &:hover .page-header__logo-image-desktop {
     fill: $basic-pink;
   }
 
-  &:active .logo-mobile,
-  &:active .logo-tablet,
-  &:active .logo-desktop {
+  &:active .page-header__logo-image-mobile,
+  &:active .page-header__logo-image-tablet,
+  &:active .page-header__logo-image-desktop {
     fill: $basic-white;
     opacity: 0.3;
   }
@@ -136,7 +137,7 @@
   }
 }
 
-.logo-mobile {
+.page-header__logo-image-mobile {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -144,7 +145,7 @@
   }
 }
 
-.logo-tablet {
+.page-header__logo-image-tablet {
   display: none;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width-less) {
@@ -152,7 +153,7 @@
   }
 }
 
-.logo-desktop {
+.page-header__logo-image-desktop {
   display: none;
 
   @media (min-width: $desktop-width) {

@@ -18,32 +18,6 @@
     <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- Pixel Glass -->
-<style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-  /* Mobile layout by default */
-    background-image: url("img/Mobile-catalog.jpg");
-  }
-/* Tablet */
-  @media ( min-width: 660px ) {
-    HTML {
-    /* Tablet layout */
-      background-image: url("img/Tablet-catalog.jpg");
-    }
-  }
-/* Desktop */
-  @media ( min-width: 1200px ) {
-    HTML {
-    /* Desktop layout */
-      background-image: url("img/Desktop-catalog.jpg");
-    }
-  }
-</style>
-<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-<script src="../node_modules/pixel-glass/script.js"></script>
-<!--// end Pixel Glass -->
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -174,7 +148,7 @@
           <span class="billboard__slogan">панорама дня</span>
         </div>
       </section>
-      <div class="post post--card">
+      <div class="post post-card">
         <div class="post__wrapper post__wrapper-panorama">
           <div class="post__author-likes-wrapper">
             <div class="post__author-info post__author-info--billboard"><span class="post__author-name">Анна</span> <span class="post__time-info">(5 минут назад)</span></div>
@@ -201,7 +175,7 @@
               <img src="img/levon-mobile-1x.jpg" srcset="img/levon-mobile-2x.jpg 2x" alt="видеокамера" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Левон</span> <span class="post__time-info">(5 часов назад)</span></div>
             <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="post__likes">
@@ -217,9 +191,9 @@
               <img src="img/anton-mobile-1x.jpg" srcset="img/anton-mobile-2x.jpg 2x" alt="ударные музыкальные инструменты" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Антон</span> <span class="post__time-info">(12 часов назад)</span></div>
-            <p class="post__text">Соседи будут рады.</p>
+            <p class="post__text">Соседи будут рады!</p>
             <div class="post__likes">
               <svg class="post__likes-icon" width="13" height="12"><use xlink:href="#icon-like"></use></svg> <span class="post__likes-number">Нравится: 666</span>
             </div>
@@ -233,7 +207,7 @@
               <img src="img/boris-mobile-1x.jpg" srcset="img/boris-mobile-2x.jpg 2x" alt="стеклянная зеркальная галерея" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Борис</span> <span class="post__time-info">(20 часов назад)</span></div>
             <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="post__likes">
@@ -249,7 +223,7 @@
               <img src="img/sergey-mobile-1x.jpg" srcset="img/sergey-mobile-2x.jpg 2x" alt="ярмарка арбузов и дынь" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Сергей</span> <span class="post__time-info">(25 часов назад)</span></div>
             <p class="post__text">Самая кубанская в мире!</p>
             <div class="post__likes">
@@ -265,7 +239,7 @@
               <img src="img/maksim-mobile-1x.jpg" srcset="img/maksim-mobile-2x.jpg 2x" alt="фото горной долины с вершины" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Максим</span> <span class="post__time-info">(40 часов назад)</span></div>
             <p class="post__text">Где снег-то?</p>
             <div class="post__likes">
@@ -281,7 +255,7 @@
               <img src="img/nadezda-mobile-1x.jpg" srcset="img/nadezda-mobile-2x.jpg 2x" alt="крыло самолета на фоне заката" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Надежда</span> <span class="post__time-info">(45 часов назад)</span></div>
             <p class="post__text">Всем GM и взаимные лайки!</p>
             <div class="post__likes">

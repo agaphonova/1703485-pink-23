@@ -5,12 +5,12 @@
 .page-main__catalog-wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     min-width: 620px;
     text-align: center;
-    padding: 79px 0 73px;
+    padding: 79px 0 77px;
   }
 
   @media (min-width: $desktop-width) {

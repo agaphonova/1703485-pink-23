@@ -18,33 +18,6 @@
     <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 
-
-    <!-- Pixel Glass -->
-<style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-  /* Mobile layout by default */
-    background-image: url("img/Mobile-form.jpg");
-  }
-/* Tablet */
-  @media ( min-width: 660px ) {
-    HTML {
-    /* Tablet layout */
-      background-image: url("img/Tablet-form.jpg");
-    }
-  }
-/* Desktop */
-  @media ( min-width: 1200px ) {
-    HTML {
-    /* Desktop layout */
-      background-image: url("img/Desktop-form.jpg");
-    }
-  }
-</style>
-<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-<script src="../node_modules/pixel-glass/script.js"></script>
-<!--// end Pixel Glass -->
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -181,7 +154,7 @@
           </section>
           <div class="success">
             <div class="success__wrapper">
-              <h3 class="success__title">Ваши безбашенные достижения в путешествии</h3>
+              <h3 class="success__title">Ваши&nbsp;безбашенные достижения в путешествии</h3>
               <ul class="success__checkbox-list">
                 <li class="success__progress-item">
                   <label class="progress"><input class="progress__input" type="checkbox" name="progress" checked="checked"/><span class="progress__element"></span> <span class="progress__label">Сделал селфи с акулой</span></label>
@@ -252,7 +225,7 @@
                 </div>
               </div>
               <div class="send">
-                <button class="send__button btn" type="submit">Отправить форму</button> <span class="send__attantion"><span class="send__mark">*</span> — Обязательные <span class="send__mark-visually-desktop">для заполнения</span> поля</span>
+                <button class="send__button btn" type="submit" tabindex="0">Отправить форму</button> <span class="send__attantion"><span class="send__mark">*</span> — Обязательные <span class="send__mark-visually-desktop">для заполнения</span> поля</span>
               </div>
             </div>
           </div>

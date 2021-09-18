@@ -32,8 +32,14 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 44px;
+    padding-top: 37px;
+    padding-bottom: 71px;
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 67px;
   }
 }
 
@@ -45,15 +51,15 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-top: 73px;
+    margin-top: 0;
     display: grid;
     grid-template-columns: 300px 1fr;
-    padding: 53px 33px 54px 20px;
+    padding: 56px 33px 32px 20px;
     grid-gap: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 44px 90px 57px 80px;
+    padding: 44px 90px 32px 80px;
     grid-gap: 89px;
   }
 }
@@ -65,39 +71,42 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+  }
 }
 
 .dowload-btn {
   border-top: 1px solid $catalog-grey-border;
-  padding-top: 38px;
+  padding-top: 36px;
   padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 61px;
     padding-bottom: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 }
 
 .dowload-btn__button {
   background-color: inherit;
   border: none;
-  padding: 18px 0;
+  padding: 17px 0;
   font-weight: 700;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   border-radius: 30px;
   width: 100%;
-  margin-bottom: 12px;
-
-  @media (min-width: $mobile-width) {
-    margin-bottom: 7px;
-  }
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     border-top: none;
     width: 100%;
   }
@@ -138,7 +147,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 37px;
+      margin-left: 44px;
     }
   }
 }

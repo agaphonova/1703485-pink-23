@@ -13,6 +13,10 @@
   @media (max-width: $tablet-width) {
     padding-left: 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
+  }
 }
 
 .contrast {

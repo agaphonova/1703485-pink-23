@@ -6,22 +6,21 @@
 
 .name__item {
   &:nth-child(1) {
-    margin-bottom: 63px;
-
     @media (min-width: $mobile-width) {
-      margin-bottom: 27px;
+      margin-bottom: 18px;
     }
   }
 
   &:nth-child(2) {
-    margin: 24px 0;
+    margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
-      margin: 59px 0;
+      margin: 54px 0;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 63px;
+      margin-top: 57px;
+      margin-bottom: 54px;
     }
   }
 }

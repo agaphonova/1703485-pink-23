@@ -13,13 +13,14 @@
 
 .progress__input {
   appearance: none;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   background-color: $basic-white;
   border: 2px solid $grey-border;
   border-radius: 1px;
   padding: 9px 6px 10px 7px;
-  margin-right: 20px;
+  margin-right: 22px;
+  margin-left: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;

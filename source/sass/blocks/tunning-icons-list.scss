@@ -27,4 +27,8 @@
     fill: $basic-pink;
     opacity: 1;
   }
+
+  &:nth-child(3) {
+    margin-right: 12px;
+  }
 }

@@ -14,10 +14,11 @@
   background-color: $basic-btn;
   color: $basic-white;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  padding: 12px 44px;
+  padding: 14px 44px;
   font-weight: 700;
-  font-size: 19px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
   border-radius: 1px;
   width: 100%;
   margin-bottom: 40px;
@@ -38,7 +39,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    width: 300px;
     margin-bottom: 0;
   }
 }

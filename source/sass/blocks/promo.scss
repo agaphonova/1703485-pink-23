@@ -3,14 +3,6 @@
   flex-direction: column;
   margin-bottom: 37px;
 
-  background: url("../img/back-mobile.jpg") no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile-2x.jpg");
-    background-size: 320px auto;
-  }
-
   @media (min-width: $tablet-width) {
     padding-bottom: 116px;
     background: none;
@@ -83,7 +75,7 @@
     padding-right: 0;
     margin-left: 55px;
     margin-top: 96px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     width: 85%;
-    top: -18px;
+    top: -12px;
     right: -38px;
   }
 

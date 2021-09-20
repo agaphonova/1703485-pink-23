@@ -6,7 +6,6 @@
 
 .radio__input {
   position: absolute;
-  appearance: none;
   display: inline-block;
   width: 1px;
   height: 1px;
@@ -60,8 +59,10 @@
   line-height: 30px;
   color: $basic-text;
   margin-left: 68px;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 60px;
+    padding-top: 0;
   }
 }

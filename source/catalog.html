@@ -18,6 +18,32 @@
     <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 
+        <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/Mobile-catalog.jpg");
+  }
+  /* Tablet */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("img/Tablet-catalog.jpg");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("img/Desktop-catalog.jpg");
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -112,9 +138,9 @@
         <div class="page-header__header">
           <div class="page-header__wrapper">
             <a class="page-header__logo" href="index.html" aria-label="логотип пинк">
-              <svg class="logo-desktop" width="147" height="40"><use xlink:href="#logo-icon-desktop"></use></svg>
-              <svg class="page-header__logo-image logo-tablet" width="145" height="40"><use xlink:href="#logo-icon-tablet"></use></svg>
-              <svg class="page-header__logo-image logo-mobile" width="74" height="23"><use xlink:href="#logo-icon-mobile"></use></svg>
+              <svg class="page-header__logo-image-desktop" width="147" height="40"><use xlink:href="#logo-icon-desktop"></use></svg>
+              <svg class="page-header__logo-image page-header__logo-image-tablet" width="145" height="40"><use xlink:href="#logo-icon-tablet"></use></svg>
+              <svg class="page-header__logo-image page-header__logo-image-mobile" width="74" height="23"><use xlink:href="#logo-icon-mobile"></use></svg>
             </a>
           </div>
           <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -143,23 +169,18 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop-1x.jpg, img/panorama-desktop-2x.jpg 2x" />
             <source media="(min-width: 660px)" srcset="img/panorama-tablet-1x.jpg, img/panorama-tablet-2x.jpg 2x" />
-            <img class="panorama" src="img/panorama-mobile-1x.jpg" srcset="img/panorama-mobile-2x.jpg 2x" alt="мост над горной рекой" />
+            <img class="billboard__panora" src="img/panorama-mobile-1x.jpg" srcset="img/panorama-mobile-2x.jpg 2x" alt="мост над горной рекой" />
           </picture>
           <span class="billboard__slogan">панорама дня</span>
         </div>
       </section>
-      <div class="post post--card">
+      <div class="post post-card">
         <div class="post__wrapper post__wrapper-panorama">
           <div class="post__author-likes-wrapper">
             <div class="post__author-info post__author-info--billboard"><span class="post__author-name">Анна</span> <span class="post__time-info">(5 минут назад)</span></div>
             <div class="post__likes post__likes-panorama">
               <span class="post__likes-icon">
-                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
-                    fill="#D22856"
-                  />
-                </svg>
+                <svg width="13" height="12"><use xlink:href="#icon-like"></use></svg>
               </span>
               <span class="post__likes-number">Нравится: 215</span>
             </div>
@@ -180,7 +201,7 @@
               <img src="img/levon-mobile-1x.jpg" srcset="img/levon-mobile-2x.jpg 2x" alt="видеокамера" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Левон</span> <span class="post__time-info">(5 часов назад)</span></div>
             <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="post__likes">
@@ -196,9 +217,9 @@
               <img src="img/anton-mobile-1x.jpg" srcset="img/anton-mobile-2x.jpg 2x" alt="ударные музыкальные инструменты" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Антон</span> <span class="post__time-info">(12 часов назад)</span></div>
-            <p class="post__text">Соседи будут рады.</p>
+            <p class="post__text">Соседи будут рады!</p>
             <div class="post__likes">
               <svg class="post__likes-icon" width="13" height="12"><use xlink:href="#icon-like"></use></svg> <span class="post__likes-number">Нравится: 666</span>
             </div>
@@ -212,7 +233,7 @@
               <img src="img/boris-mobile-1x.jpg" srcset="img/boris-mobile-2x.jpg 2x" alt="стеклянная зеркальная галерея" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Борис</span> <span class="post__time-info">(20 часов назад)</span></div>
             <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="post__likes">
@@ -228,7 +249,7 @@
               <img src="img/sergey-mobile-1x.jpg" srcset="img/sergey-mobile-2x.jpg 2x" alt="ярмарка арбузов и дынь" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Сергей</span> <span class="post__time-info">(25 часов назад)</span></div>
             <p class="post__text">Самая кубанская в мире!</p>
             <div class="post__likes">
@@ -244,7 +265,7 @@
               <img src="img/maksim-mobile-1x.jpg" srcset="img/maksim-mobile-2x.jpg 2x" alt="фото горной долины с вершины" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Максим</span> <span class="post__time-info">(40 часов назад)</span></div>
             <p class="post__text">Где снег-то?</p>
             <div class="post__likes">
@@ -260,7 +281,7 @@
               <img src="img/nadezda-mobile-1x.jpg" srcset="img/nadezda-mobile-2x.jpg 2x" alt="крыло самолета на фоне заката" />
             </picture>
           </div>
-          <div class="post__wrapper">
+          <div class="post__wrapper post__wrapper-tape">
             <div class="post__author-info"><span class="post__author-name">Надежда</span> <span class="post__time-info">(45 часов назад)</span></div>
             <p class="post__text">Всем GM и взаимные лайки!</p>
             <div class="post__likes">
@@ -283,9 +304,10 @@
                 <img src="img/tuning-mobile-1x.jpg" srcset="img/tuning-mobile-2x.jpg 2x" alt="заснеженная дорога" />
               </picture>
             </div>
-            <div class="tunning-icons icons-list">
-              <svg class="icons-list__item icons-list__item--active" width="44" height="44"><use xlink:href="#icon-crop"></use></svg> <svg class="icons-list__item" width="48" height="44"><use xlink:href="#icon-fill"></use></svg>
-              <svg class="icons-list__item" width="32" height="32"><use xlink:href="#icon-contrast"></use></svg>
+            <div class="tunning-icons-list">
+              <svg class="tunning-icons-list__item tunning-icons-list__item--active" width="44" height="44"><use xlink:href="#icon-crop"></use></svg>
+              <svg class="tunning-icons-list__item" width="48" height="44"><use xlink:href="#icon-fill"></use></svg>
+              <svg class="tunning-icons-list__item" width="32" height="32"><use xlink:href="#icon-contrast"></use></svg>
             </div>
             <div class="tunning">
               <div class="tunning__wrap">
@@ -301,21 +323,21 @@
                     <svg class="fill__img" width="48" height="43"><use xlink:href="#icon-fill"></use></svg>
                     <div class="retouch-range retouch-range--using-tablet">
                       <div class="retouch-range-scale"><div class="retouch-range-bar"></div></div>
-                      <button class="retouch-range-handle current" style="left: 15%;"></button>
+                      <button class="retouch-range-handle current" style="left: 11%;"></button>
                     </div>
                   </li>
                   <li class="tunning-list__item contrast" data-tab="3">
                     <svg class="contrast__img" width="32" height="32"><use xlink:href="#icon-contrast"></use></svg>
                     <div class="retouch-range retouch-range--using-tablet">
                       <div class="retouch-range-scale"><div class="retouch-range-bar"></div></div>
-                      <button class="retouch-range-handle current" style="left: 50%;"></button>
+                      <button class="retouch-range-handle current" style="left: 43%;;"></button>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div class="dowload-btn">
-                <div class="dowload-btn__wrapper">
-                  <button class="dowload-btn__button dowload-btn__button--submit" type="submit">Запостить</button> <button class="dowload-btn__button dowload-btn__button--cancel" type="reset">Отмена</button>
+              <div class="tunning-btn">
+                <div class="tunning-btn__wrapper">
+                  <button class="tunning-btn__button tunning-btn__button--submit" type="submit">Запостить</button> <button class="tunning-btn__button tunning-btn__button--cancel" type="reset">Отмена</button>
                 </div>
               </div>
             </div>

@@ -48,7 +48,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("slider__item");
-    let dots = document.getElementsByClassName("slider__toggle");
+    let dots = document.getElementsByClassName("reviews__toggle");
 
     if (n > slides.length) {
         slideIndex = 1

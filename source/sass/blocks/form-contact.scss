@@ -1,14 +1,11 @@
 .form-contact {
   order: 3;
-  margin-top: 24px;
-  margin-bottom: 14px;
-  // outline: 3px solid rgb(255, 255, 0);
-  // outline-offset: -3px;
+  margin-top: 29px;
 
   @media (min-width: $tablet-width) {
     order: 3;
     padding: 0 20px;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +13,7 @@
     padding-right: 0;
     padding-left: 0;
     margin-top: 64px;
+    margin-bottom: 64px;
   }
 }
 
@@ -47,11 +45,11 @@
     width: 260px;
     margin: 0 auto;
     margin-top: -10px;
-    margin-bottom: 41px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -10px auto 41px;
+    margin: -10px auto 33px;
   }
 }
 
@@ -61,11 +59,11 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 
   @media (min-width: $tablet-width) {
     padding: 0 58px;
-    gap: 33px;
+    gap: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +74,7 @@
   }
 }
 
-.form-contact-phone {
+.form-contact__phone {
   position: relative;
   display: inline-block;
 
@@ -87,7 +85,7 @@
     position: absolute;
     top: 22px;
     right: -21px;
-    padding: 13px 17px 18px;
+    padding: 20px 17px 14px;
     border: 3px solid $radio-grey-border;
     background-color: $radio-grey-border;
     border-radius: 2px;
@@ -103,13 +101,17 @@
   }
 }
 
-.form__contact-mail {
+.form-contact__mail {
   position: relative;
   display: inline-block;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 
   &::after {
@@ -119,7 +121,7 @@
     position: absolute;
     top: 23px;
     right: -21px;
-    padding: 15px 18px 19px;
+    padding: 21px 18px 17px;
     border: 3px solid #e5e5e5;
     background-color: $radio-grey-border;
     border-radius: 2px;

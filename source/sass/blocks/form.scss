@@ -37,6 +37,14 @@
   }
 }
 
+.form__slogan-visually-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
 .form__content-wrapper {
   display: flex;
   flex-direction: column;
@@ -48,117 +56,5 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-  }
-}
-
-.visually-tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-  }
-}
-
-.form-area {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: baseline;
-
-    &--reverse {
-      flex-direction: column-reverse;
-    }
-  }
-}
-
-.form-area__label {
-  line-height: 30px;
-  color: $basic-pink;
-  display: block;
-  margin-left: 23px;
-  margin-bottom: 3px;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    margin-left: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 2px;
-  }
-
-  &--user-desktop {
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      margin-right: 20px;
-    }
-  }
-}
-
-.form-area__input-wrap {
-  display: flex;
-  height: 59px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
-.form-area__input {
-  box-sizing: border-box;
-  width: 100%;
-  border: 2px solid $grey-border;
-  border-radius: 1px;
-  padding: 14px 20px;
-  font-size: 21px;
-
-  &:focus {
-    outline: none;
-
-    &::placeholder {
-      color: transparent;
-    }
-  }
-
-  &:hover {
-    outline: none;
-    border: 2px solid $basic-text;
-  }
-
-  &:active {
-    outline: none;
-    border: 2px solid $basic-pink;
-  }
-
-  &::placeholder {
-    color: $basic-text;
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  &:required:not(:empty):invalid {
-    border: 2px solid $modal-required;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 14px 17px;
-  }
-}
-
-.form-area__input-tel,
-.form-area__input-mail {
-  width: 100%;
-  padding: 23px 20px;
-
-  @media (min-width: $tablet-width) {
-    width: calc(100% - 59px);
   }
 }

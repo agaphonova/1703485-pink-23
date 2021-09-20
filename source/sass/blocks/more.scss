@@ -1,7 +1,7 @@
 .more {
   order: 5;
   background-color: $basic-white;
-  margin-top: 26px;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     order: 5;
@@ -25,20 +25,25 @@
 }
 
 .more__emotion {
-  margin-bottom: 52px;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 60px 48px 50px;
+    padding: 0 59px 52px 58px;
     border: 2px solid $radio-grey-border;
     border-radius: 1px;
-    margin-bottom: 69px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 59px 44px 58px;
   }
 }
 
 .more__title {
+  display: block;
   color: $basic-pink;
   line-height: 18px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   text-transform: uppercase;
   text-align: center;
 
@@ -46,8 +51,12 @@
     background-color: $basic-white;
     width: 260px;
     margin: 0 auto;
-    margin-top: -14px;
-    margin-bottom: 42px;
+    margin-top: -9px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -55,14 +64,28 @@
   border: 2px solid $grey-border;
   border-radius: 1px;
   height: 150px;
-  padding: 9px 19px 32px 19px;
+  padding: 9px 19px 37px;
+
+  &:hover {
+    outline: none;
+    border: 2px solid $basic-text;
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid $basic-pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 140px;
+  }
 
   @media (min-width: $desktop-width) {
-    height: 72px;
+    height: 76px;
   }
 }
 
-textarea {
+.more__window-content {
   font-family: "Open Sans", "Arial", sans-serif;
   border: none;
   resize: none;
@@ -70,6 +93,7 @@ textarea {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  line-height: 30px;
 
   &:focus {
     outline: none;

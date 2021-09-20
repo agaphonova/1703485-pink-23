@@ -1,0 +1,10 @@
+.crop__img {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width-only) and (max-width: $desktop-width-less) {
+    width: 22px;
+    height: 22px;
+  }
+}

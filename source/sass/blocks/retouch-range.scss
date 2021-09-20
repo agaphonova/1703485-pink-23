@@ -1,0 +1,42 @@
+.retouch-range {
+  position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 39px;
+  }
+
+  &--using-tablet {
+    @media (max-width: $tablet-width-only) {
+      display: none;
+    }
+  }
+}
+
+.retouch-range-scale {
+  height: 2px;
+  background-color: $basic-text;
+}
+
+.retouch-range-bar {
+  height: 2px;
+  background-color: $basic-text;
+}
+
+.retouch-range-handle {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  box-sizing: content-box;
+  padding: 0;
+  border: 2px solid $basic-pink;
+  border-radius: 50%;
+  background-color: $basic-white;
+  cursor: pointer;
+
+  &:active {
+    background-color: $basic-pink;
+  }
+}

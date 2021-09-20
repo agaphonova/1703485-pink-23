@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.panorama {
+.billboard__panorama {
   background-size: cover;
   width: 100%;
 }
@@ -27,7 +27,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    top: 57px;
+    top: 56px;
   }
 
   @media (min-width: $desktop-width) {

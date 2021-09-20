@@ -16,6 +16,32 @@
     <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 
+            <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/Mobile.jpg");
+  }
+  /* Tablet */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("img/Tablet.jpg");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("img/Desktop.jpg");
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -100,9 +126,9 @@
         <div class="page-header__header">
           <div class="page-header__wrapper">
             <a class="page-header__logo" href="#" aria-label="логотип пинк">
-              <svg class="logo-desktop" width="147" height="40"><use xlink:href="#logo-icon-desktop"></use></svg>
-              <svg class="page-header__logo-image logo-tablet" width="145" height="40"><use xlink:href="#logo-icon-tablet"></use></svg>
-              <svg class="page-header__logo-image logo-mobile" width="74" height="23"><use xlink:href="#logo-icon-mobile"></use></svg>
+              <svg class="page-header__logo-image-desktop" width="147" height="40"><use xlink:href="#logo-icon-desktop"></use></svg>
+              <svg class="page-header__logo-image page-header__logo-image-tablet" width="145" height="40"><use xlink:href="#logo-icon-tablet"></use></svg>
+              <svg class="page-header__logo-image page-header__logo-image-mobile" width="74" height="23"><use xlink:href="#logo-icon-mobile"></use></svg>
             </a>
           </div>
           <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -182,7 +208,7 @@
                   </picture>
                   <span class="advantages__shadow"></span>
                   <h3 class="advantages__title">Меняет мир вокруг</h3>
-                  <p class="advantages__description">Сделайте снимок и&nbsp;украсьте&nbsp;его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+                  <p class="advantages__description">Сделайте снимок и украсьте&nbsp;его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
                 </li>
                 <li class="advantages__item advantages__item--friend">
                   <picture>
@@ -192,13 +218,13 @@
                   </picture>
                   <span class="advantages__shadow"></span>
                   <h3 class="advantages__title">Заводит новых&nbsp;друзей</h3>
-                  <p class="advantages__description">Ставьте лайки,&nbsp;комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
               </ul>
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/iphone-smile-tablet-1x.png, img/iphone-smile-tablet-2x.png 2x"/>
                 <source media="(min-width: 660px)" srcset="img/iphone-smile-tablet-1x.png, img/iphone-smile-tablet-2x.png 2x"/>
-                <img class="advantages__img" src="img/iphone-smile-tablet-1x.png" srcset="img/friends-2x.png 2x" alt="телефон всем привет"/>
+                <img class="advantages__img" src="img/iphone-smile-mobile-1x.png" srcset="img/iphone-smile-mobile-2x.png 2x" alt="телефон всем привет"/>
               </picture>
             </div>
           </div>
@@ -207,48 +233,48 @@
           <div class="result">
             <p class="result__title">Эффект на&nbsp;24 часа!</p>
             <p class="result__info">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-            <a class="result__link" href="#">знать больше об исследовании</a>
+            <a class="result__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wripper slider">
+        <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__author-age">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! #1»</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Кошкин Орлов</cite>
                 <p class="reviews__author-age">56 лет, овцевод</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! #2»</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Сидоров Козлов</cite>
                 <p class="reviews__author-age">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! #3»</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
           </div>
-            <div class="reviews__slider-button-wrapper">
-                <button class="previous" onclick="nextSlide()" type="button" aria-label="назад">
+            <div class="reviews__slider-button-wrapper reviews-control">
+                <button class="reviews-control__previous" onclick="nextSlide()" type="button" aria-label="назад">
                   <svg width="22" height="41" viewBox="0 0 22 41"><use xlink:href="#slider-btn"></use></svg>
                 </button>
-                <button class="next" onclick="previousSlide()" type="button" aria-label="вперед">
+                <button class="reviews-control__next" onclick="previousSlide()" type="button" aria-label="вперед">
                   <svg width="22" height="41" viewBox="0 0 22 41"><use xlink:href="#slider-btn"></use></svg>
                 </button>
             </div>
-          <p class="reviews__toggles slider__toggles">
-            <button onclick="currentSlide(1)" class="slider__toggle slider__toggle--current"></button>
-            <button onclick="currentSlide(2)" class="slider__toggle"></button>
-            <button onclick="currentSlide(3)" class="slider__toggle"></button>
+          <p class="reviews__toggles">
+            <button onclick="currentSlide(1)" class="reviews__toggle reviews__toggle--current"></button>
+            <button onclick="currentSlide(2)" class="reviews__toggle"></button>
+            <button onclick="currentSlide(3)" class="reviews__toggle"></button>
           </p>
         </div>
       </section>
@@ -263,9 +289,9 @@
             </ul>
 
             <ul class="tariffs__list-slider">
-              <li class="tariffs__item tarif">
-                <p class="tarif__name">база</p>
-                <p class="tarif__price">1,99 USD</p>
+              <li class="tariffs__item tariff">
+                <p class="tariff__name">база</p>
+                <p class="tariff__price">1,99 USD</p>
               </li>
               <li class="option">
                 <p class="option__title">Розовый фильтр</p>
@@ -287,9 +313,9 @@
               </li>
             </ul>
             <ul class="tariffs__list-slider tariffs__list-slider-promo">
-              <li class="tariffs__item tariffs__item--standart tarif">
-                <p class="tarif__name">стандарт</p>
-                <p class="tarif__price">3,99 USD</p>
+              <li class="tariffs__item tariffs__item--standart tariff">
+                <p class="tariff__name">стандарт</p>
+                <p class="tariff__price">3,99 USD</p>
               </li>
               <li class="option">
                 <p class="option__title">Розовый фильтр</p>
@@ -311,9 +337,9 @@
               </li>
             </ul>
             <ul class="tariffs__list-slider">
-              <li class="tariffs__item tarif">
-                <p class="tarif__name">анлим</p>
-                <p class="tarif__price">9,99 USD</p>
+              <li class="tariffs__item tariff">
+                <p class="tariff__name">анлим</p>
+                <p class="tariff__price">9,99 USD</p>
               </li>
               <li class="option">
                 <p class="option__title">Розовый фильтр</p>
@@ -336,10 +362,9 @@
             </ul>
 
             <ul class="tariffs__list tariffs__list-promo">
-              <li class="tariffs__item tariffs__item--standart tarif">
-                <!-- <span class="tarif__type">хит</span> -->
-                <p class="tarif__name">стандарт</p>
-                <p class="tarif__price">3,99 USD</p>
+              <li class="tariffs__item tariffs__item--standart tariff">
+                <p class="tariff__name">стандарт</p>
+                <p class="tariff__price">3,99 USD</p>
               </li>
               <li class="option">
                 <p class="option__title">Розовый фильтр</p>
@@ -361,9 +386,9 @@
               </li>
             </ul>
             <ul class="tariffs__list">
-              <li class="tariffs__item tarif">
-                <p class="tarif__name">анлим</p>
-                <p class="tarif__price">9,99 USD</p>
+              <li class="tariffs__item tariff">
+                <p class="tariff__name">анлим</p>
+                <p class="tariff__price">9,99 USD</p>
               </li>
               <li class="option">
                 <p class="option__title">Розовый фильтр</p>
@@ -416,7 +441,7 @@
         </div>
         <div class="contacts__map">
           <span class="contacts__element"></span>
-          <iframe class="map-image" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e18b5352f2fe32ffd7da2b5065c18a99ca3543937dac6cd01c5d1a3cf1d17f9&amp;source=constructor"></iframe>
+          <iframe class="contacts__element-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e18b5352f2fe32ffd7da2b5065c18a99ca3543937dac6cd01c5d1a3cf1d17f9&amp;source=constructor"></iframe>
         </div>
       </section>
     </main>

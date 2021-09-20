@@ -1,0 +1,32 @@
+.action__type {
+  margin: 51px 0 51px 0;
+  cursor: pointer;
+  background-color: $basic-btn;
+  color: $basic-white;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  padding: 13px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 1px;
+  width: 100%;
+  border: 2px solid $basic-btn;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}
+
+.action__type--success {
+  @media (min-width: $desktop-width) {
+    width: 456px;
+  }
+}
+
+.aaction__type--error {
+  @media (min-width: $desktop-width) {
+    // margin: 0 auto;
+    width: 296px;
+  }
+}

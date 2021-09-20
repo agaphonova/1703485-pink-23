@@ -63,18 +63,6 @@
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
-// .main-nav--closed .site-list__item {
-//   @media (max-width: $desktop-width-less) {
-//     display: none;
-//   }
-// }
-
-// .main-nav--opened .site-list__item {
-//   @media (max-width: $desktop-width-less) {
-//     display: block;
-//   }
-// }
-
 .main-nav--closed .main-nav__list {
   @media (max-width: $desktop-width-less) {
     display: none;

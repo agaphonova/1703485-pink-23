@@ -10,28 +10,6 @@
   }
 }
 
-.page-footer-catalog {
-  padding: 42px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 36px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 101px 0;
-  }
-}
-
-.page-footer-form {
-  @media (min-width: $tablet-width) {
-    padding: 59px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 44px 0;
-  }
-}
-
 .page-footer__wrapper {
   min-width: 280px;
   padding: 0 20px;

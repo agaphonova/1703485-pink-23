@@ -12,7 +12,7 @@
     width: 100%;
     padding-right: 0;
     padding-left: 0;
-    margin-top: 61px;
+    margin-top: 64px;
     margin-bottom: 64px;
   }
 }
@@ -74,7 +74,7 @@
   }
 }
 
-.form-contact-phone {
+.form-contact__phone {
   position: relative;
   display: inline-block;
 
@@ -85,7 +85,7 @@
     position: absolute;
     top: 22px;
     right: -21px;
-    padding: 20px 17px 15px;
+    padding: 20px 17px 14px;
     border: 3px solid $radio-grey-border;
     background-color: $radio-grey-border;
     border-radius: 2px;
@@ -101,7 +101,7 @@
   }
 }
 
-.form__contact-mail {
+.form-contact__mail {
   position: relative;
   display: inline-block;
   margin-bottom: 41px;
@@ -121,7 +121,7 @@
     position: absolute;
     top: 23px;
     right: -21px;
-    padding: 21px 18px 19px;
+    padding: 21px 18px 17px;
     border: 3px solid #e5e5e5;
     background-color: $radio-grey-border;
     border-radius: 2px;

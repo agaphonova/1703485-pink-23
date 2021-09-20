@@ -1,9 +1,10 @@
 .option-toggle {
   margin: 0 auto;
   padding: 0;
-  width: 70px;
-  display: flex;
-  justify-content: space-between;
+  width: 58px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -12,25 +13,22 @@
 }
 
 .option-toggle__btn {
-  outline: none;
   padding: 0;
+  display: inline-block;
   width: 6px;
   height: 6px;
-  background-color: $basic-text;
   border: 2px solid $basic-text;
   border-radius: 50%;
-  cursor: pointer;
+  background-color: $basic-text;
   opacity: 0.3;
+  cursor: pointer;
 
-  &--current {
+  &.active {
     width: 12px;
     height: 12px;
+    border: 3px solid $basic-text;
+    border-radius: 50%;
     opacity: 1;
     background-color: $basic-white;
-    border: 3px solid $basic-text;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

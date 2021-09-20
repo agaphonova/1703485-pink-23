@@ -1,7 +1,7 @@
-.tarif {
+.tariff {
   text-align: center;
-  padding-top: 18px;
-  padding-bottom: 35px;
+  padding-top: 16px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 18px;
@@ -13,12 +13,7 @@
   }
 }
 
-.tarif__type {
-  background-color: $basic-pink;
-  color: $basic-white;
-}
-
-.tarif__name {
+.tariff__name {
   font-weight: 700;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -34,7 +29,7 @@
   }
 }
 
-.tarif__price {
+.tariff__price {
   font-family: "Open Sans Light", "Arial-Light", sans-serif;
   font-weight: 300;
   font-size: 18px;

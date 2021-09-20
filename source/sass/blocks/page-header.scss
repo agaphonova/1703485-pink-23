@@ -75,7 +75,6 @@
   @media (min-width: $tablet-width) {
     min-width: 620px;
     height: 110px;
-    // background-color: $basic-text;
 
     &--catalog {
       background: none;
@@ -98,7 +97,11 @@
   color: $basic-white;
   text-align: center;
   padding-top: 28px;
-  padding-bottom: 42px;
+  padding-bottom: 76px;
+
+  &--form {
+    padding-bottom: 43px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
@@ -113,7 +116,13 @@
 }
 
 .page-header__slogan-catalog {
-  padding-bottom: 74px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 126px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
 }
 
 .page-header__logo {

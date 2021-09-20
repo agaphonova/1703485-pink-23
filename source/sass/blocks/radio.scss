@@ -6,8 +6,6 @@
 
 .radio__input {
   position: absolute;
-  // appearance: none;
-  // visibility: hidden;
   display: inline-block;
   width: 1px;
   height: 1px;
@@ -31,14 +29,6 @@
   &:active {
     border: 2px solid $basic-pink;
   }
-
-  // &:focus {
-  //   border: 2px solid $basic-pink;
-  // }
-
-  // &:checked:focus {
-  //   border: 2px solid $basic-pink;
-  // }
 
   &::after {
     position: absolute;

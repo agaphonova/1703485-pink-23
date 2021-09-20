@@ -13,6 +13,10 @@
     left: -62%;
     transform: translateX(-50%);
 
+    @media (min-width: $tablet-width) {
+      top: -39px;
+    }
+
     @media (min-width: $desktop-width) {
       left: 16%;
       width: 298px;
@@ -48,9 +52,9 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-top: 77px;
+    margin-top: 76px;
     margin-left: 27px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 

@@ -27,10 +27,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    top: 57px;
+    top: 56px;
   }
 
   @media (min-width: $desktop-width) {
     right: 130px;
+    padding: 5px 20px;
   }
 }

@@ -17,7 +17,6 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
-
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -120,7 +119,7 @@
           </nav>
         </div>
       </div>
-      <h1 class="page-header__slogan">
+      <h1 class="page-header__slogan page-header__slogan--form">
         Конкурс на самое безбашенное<br />
         путешествие&nbsp;с Пинк
       </h1>
@@ -140,13 +139,13 @@
               <div class="name">
                 <ul class="name__list">
                   <li class="name__item">
-                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Фамилия:</span> <input class="form-area__input" type="text" required pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" placeholder="Укажите фамилию *" /></label>
+                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Фамилия:</span><input class="form-area__input" type="text" required pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" placeholder="Укажите фамилию *"/></label>
                   </li>
                   <li class="name__item">
-                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Имя:</span> <input class="form-area__input" type="text" required placeholder="Введите ваше имя *" /></label>
+                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Имя:</span><input class="form-area__input" type="text" required placeholder="Введите ваше имя *"/></label>
                   </li>
                   <li class="name__item">
-                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Отчество:</span> <input class="form-area__input" type="text" placeholder="Ну и отчество тоже" /></label>
+                    <label class="form-area"><span class="form-area__label form-area__label--user-desktop">Отчество:</span><input class="form-area__input" type="text" placeholder="Ну и отчество тоже"/></label>
                   </li>
                 </ul>
               </div>
@@ -181,19 +180,20 @@
             <div class="form-contact__wrapper">
               <h3 class="form-contact__title">контактная информация</h3>
               <ul class="form-contact__contacts">
-                <li class="form-contact-phone">
+                <li class="form-contact__phone">
                   <label class="form-area form-area--reverse">
                     <span class="form-area__label">Номер телефона</span>
                     <span class="form-area__input-wrap">
-                      <input class="form-area__input form-area__input-tel" type="tel" pattern="^[0-9]+$" placeholder="Номер, пожалуйста" />
+                      <input class="form-area__input form-area__input-tel" type="tel" pattern="^[0-9]+$" placeholder="Номер,пожалуйста" />
                     </span>
                   </label>
                 </li>
-                <li class="form__contact-mail">
+                <li class="form-contact__mail">
                   <label class="form-area form-area--reverse">
                     <span class="form-area__label">Адрес почты</span>
                     <span class="form-area__input-wrap">
-                      <input class="form-area__input form-area__input-mail" type="text" required placeholder="Введите почту *" />
+                      <input class="form-area__input form-area__input-mail" type="text" required placeholder="Введите почту *"/>
+                      <span class="form-area__markup-required"></span>
                     </span>
                   </label>
                 </li>
@@ -268,30 +268,34 @@
       </div>
     </footer>
 
-    <div class="modal modal-success">
-      <div class="modal__form-heading">
-        <p class="modal__form-title">Ваша заявка отправлена</p>
-        <p class="modal__form-description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы&nbsp; рассмотрим ее и оповестим&nbsp;вас.</p>
-      </div>
-      <div class="modal__form-button-wrapper">
-        <div class="modal__form-button send">
-          <button class="send__button btn send__button--success" type="submit" value="ЗАКРЫТЬ ОКНО">ЗАКРЫТЬ ОКНО</button>
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__form-heading">
+          <p class="modal__form-title">Ваша заявка отправлена</p>
+          <p class="modal__form-description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы&nbsp; рассмотрим ее и оповестим&nbsp;вас.</p>
+        </div>
+        <div class="modal__form-button-wrapper">
+          <div class="modal__form-button action">
+            <button class="action__type action__type--error" type="submit" value="ЗАКРЫТЬ ОКНО">ЗАКРЫТЬ ОКНО</button>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
 
-    <div class="modal modal-error">
-      <div class="modal__form-heading">
-        <p class="modal__form-title">Что-то пошло не так!</p>
-        <p class="modal__form-description">Проверьте поля, выделенные красным,
-          скорее всего вы забыли их заполнить</p>
-      </div>
-      <div class="modal__form-button-wrapper">
-        <div class="modal__form-button send">
-          <button class="send__button btn send__button--error" type="submit" value="ОК">ОК</button>
+      <div class="modal">
+        <div class="modal__container">
+        <div class="modal__form-heading">
+          <p class="modal__form-title">Что-то пошло не так!</p>
+          <p class="modal__form-description">Проверьте поля, выделенные красным,
+            скорее всего вы забыли их заполнить</p>
+        </div>
+        <div class="modal__form-button-wrapper">
+          <div class="modal__form-button action">
+            <button class="action__type action__type--success" type="submit" value="ОК">ОК</button>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
     <script src=js/script.min.js></script>
   </body>
 </html>

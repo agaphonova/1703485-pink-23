@@ -5,6 +5,7 @@
 @import "../sass/mixins.scss";
 @import "../sass/global.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/action.scss";
 @import "./blocks/app.scss";
 @import "./blocks/billboard.scss";
 @import "./blocks/btn-download.scss";
@@ -31,11 +32,13 @@
 @import "./blocks/page-main.scss";
 @import "./blocks/page.scss";
 @import "./blocks/post.scss";
+@import "./blocks/post-card.scss";
 @import "./blocks/progress.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/range.scss";
 @import "./blocks/result.scss";
+@import "./blocks/reviews-control.scss";
 @import "./blocks/retouch-range.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/send.scss";
@@ -45,8 +48,10 @@
 @import "./blocks/socials.scss";
 @import "./blocks/store.scss";
 @import "./blocks/success.scss";
-@import "./blocks/tarif.scss";
+@import "./blocks/tariff.scss";
 @import "./blocks/tariffs.scss";
 @import "./blocks/tunning.scss";
+@import "./blocks/tunning-list.scss";
+@import "./blocks/tunning-btn.scss";
 @import "./blocks/tunning-icons-list.scss";
 @import "./blocks/user.scss";

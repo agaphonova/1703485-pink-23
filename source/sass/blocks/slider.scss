@@ -22,19 +22,3 @@
     }
   }
 }
-
-.option-toggle__btn {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: $basic-text;
-  opacity: 0.3;
-  border-radius: 50%;
-  padding: 3px;
-
-  &.active {
-    opacity: 1;
-    background-color: $basic-white;
-    border: 3px solid $basic-text;
-  }
-}

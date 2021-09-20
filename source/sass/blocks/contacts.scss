@@ -25,7 +25,7 @@
   font-size: 24px;
   color: $basic-text;
   line-height: 28px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -161,7 +161,8 @@
 .contacts__element {
   display: block;
   position: absolute;
-  top: -12rem;
+  top: -176px;
+  // top: -12rem;
   background: url("../img/triangle.svg");
   background-size: cover;
   background-position: center;

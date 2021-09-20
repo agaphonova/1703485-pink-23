@@ -11,10 +11,12 @@
     min-width: 620px;
     text-align: center;
     padding: 79px 0 77px;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 0 88px;
+    padding-top: 9px;
+    padding-bottom: 88px;
     min-width: 940px;
   }
 }
